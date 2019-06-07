@@ -66,7 +66,7 @@ client.on("message", (message) => {
 
       }
     else if (message.content.toLowerCase().includes("wuntap")) {
-      switch (Math.floor(Math.random() * 12)) {
+      switch (Math.floor(Math.random() * 18)) {
         case 2:
           message.channel.send("Only if Jeff is not playing.");
           break;
