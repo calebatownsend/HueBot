@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
+const config = require('./config.json');
 
 const fs = require('fs');
 
@@ -126,7 +127,7 @@ client.on("message", (message) => {
     }
 
     else if (message.content.toLowerCase().includes("admin") || message.content.toLowerCase().includes("abuse") || message.content.toLowerCase().includes("skype")) {
-      switch (Math.floor(Math.random() * 20)) {
+      switch (Math.floor(Math.random() * 29)) {
         case 2:
           message.channel.send("These admins are terrible. I'm starting my own server if ya'll would like to join.");
           break;
@@ -225,7 +226,7 @@ client.on("message", (message) => {
             break;
         }
       }
-      switch (Math.floor(Math.random() * 160)) {
+      switch (Math.floor(Math.random() * 200)) {
         case 2:
           message.channel.send("nobody cares");
           break;
@@ -261,4 +262,4 @@ client.on("message", (message) => {
 );
 
 
-client.login("NTc5MDEzMTExNjIxODc3ODEz.XN7-9Q.Qwz6ZvXM4GYt4aeY-Q1nX5PgxnU");
+client.login(config.token);
