@@ -50,13 +50,13 @@ client.on("message", (message) => {
 
   //back to work responses
   if (dibstore[message.author.id]["messages"] == 200 && d.getHours() < 18) {
-    message.reply("TWO HUNDRED MESSAGES TODAY. getting any work done?");
+    reply(message,"TWO HUNDRED MESSAGES TODAY. getting any work done??");
   }
   else if (dibstore[message.author.id]["messages"] == 100 && d.getHours() < 18) {
-    message.reply("does your boss know you are on discord? hue");
+    reply(message,"does your boss know you are on discord? hue");
   }
   else if (dibstore[message.author.id]["messages"] == 50 && d.getHours() < 18) {
-    message.reply("you've been on Discord a lot today. Taking a long lunch?");
+    reply(message,"you've been on Discord a lot today. Taking a long lunch?");
   }
 
 
