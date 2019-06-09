@@ -272,5 +272,43 @@
             "timesUsed": "0",
             "responseType": "send"
         }
+    ],
+
+    "ide": [
+        {
+            "phrase": "A senior dev can’t figure out how to setup their environment? Sad!",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        }
+    ],
+    "meme": [
+        {
+            "phrase": "Why are memes not in the meme channel.",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "please use the meme channel to post memes, thank you",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        }
+    ],
+    "paid": [
+        {
+            "phrase": "Should be free.",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "too expensive",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        }
     ]
+
 }
