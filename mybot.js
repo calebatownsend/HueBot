@@ -3,6 +3,9 @@ const client = new Discord.Client();
 const config = require('./config.json');
 const lfGuildID = "144653611819859969"; // "League Friends" server ID
 
+var botInterface = require('./botInterface.js');
+var messageAnalyzer = require('./messageAnalyze.js');
+
 //RESPONSE PERCENTAGES:
 //The percent that HueBot will respond if trigger is found.
 const baseHotwordResponsePercent = 12;
@@ -13,8 +16,6 @@ const baseChannelResponsePercent = 1;
 
 //The percent that HueBot will react to a given message
 const baseChannelReactionPercent = 1;
-
-var messageAnalyzer = require('./messageAnalyze.js');
 
 let emojiNames = ["donny","skwondering","uhhuh","thinking","caleb","santarich","josh","swiss","jeremy","van","gray","chase","ray","toottoot","kevin","skno","skdrunk","tyler","ashley"];
 let emojis = [];
@@ -46,6 +47,18 @@ client.on("ready", () => {
 
 //PRIMARY MESSAGE PROCESSING THREAD:
 client.on("message", (message) => {
+  var huebotMention = message.mentions.users.find(user => {
+    return user.id === client.user.id;
+  });
+
+  if (huebotMention)
+  {
+    var UserCommand = botInterface.commandParser.Parse(client, message);
+    if (UserCommand) {
+      UserCommand.Execute();
+    }
+  }
+
   var date = new Date();
   var today = date.getDate();
 
