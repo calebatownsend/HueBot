@@ -25,10 +25,16 @@
             "responseType": "send"
         },
         {
-            "phrase": "this chat is ded",
+            "phrase": "Looks like my bet is going to pay off.",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
+        },
+        {
+            "phrase": "I challenge you to a gain contest",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "reply"
         }
     ],
     "main": [
