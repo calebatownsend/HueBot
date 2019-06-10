@@ -4,14 +4,14 @@ const config = require('./config.json');
 
 //RESPONSE PERCENTAGES:
 //The percent that HueBot will respond if trigger is found.
-const baseHotwordResponsePercent = 20;
+const baseHotwordResponsePercent = 18;
 
 //The percent that HueBot will respond with a general phrase. 
 //Needs to be much lower than Hotword response because this is against every message in the channel.
-const baseChannelResponsePercent = 1.5;
+const baseChannelResponsePercent = 1;
 
 //The percent that HueBot will react to a given message
-const baseChannelReactionPercent = 2;
+const baseChannelReactionPercent = 1;
 
 var messageAnalyzer = require('./messageAnalyze.js');
 

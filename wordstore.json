@@ -336,7 +336,7 @@
         }
     ],
 
-    "ide": [
+    "development": [
         {
             "phrase": "A senior dev can’t figure out how to setup their environment? Sad!",
             "probabilityModifier": "0",

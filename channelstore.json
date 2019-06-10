@@ -35,6 +35,18 @@
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "reply"
+        },
+        {
+            "phrase": "CrossFit gets a bad rep of encouraging people to complete reps as fast as possible and think about form as an afterthought.",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "reply"
+        },
+        {
+            "phrase": "Get a water tower. That’s wat we use at orange theory. 3x Orange theory classes per week, trying to get back up to 4",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "reply"
         }
     ],
     "main": [
@@ -57,7 +69,7 @@
             "responseType": "send"
         },
         {
-            "phrase": "I deserve transparency from the 'admin' team",
+            "phrase": "Lmfao Why are you reinventing the wheel? I’m sure this already exists",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
