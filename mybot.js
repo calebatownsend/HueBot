@@ -1,6 +1,7 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const config = require('./config.json');
+const lfGuildID = "144653611819859969"; // "League Friends" server ID
 
 //RESPONSE PERCENTAGES:
 //The percent that HueBot will respond if trigger is found.
@@ -26,20 +27,25 @@ let dibstore = JSON.parse(rawdata);
 console.log(dibstore);
 
 client.on("ready", () => {
-  console.log("I am ready to troll!");
-});
+  //load emoji objects
+  var leagueFriendsGuild = client.guilds.find(guild => {
+    return guild.id === lfGuildID;
+  });
 
-//PRIMARY MESSAGE PROCESSING THREAD:
-client.on("message", (message) => {
-  //load emoji objects if necessary
-  if (emojis.length == 0 && message.guild.name == "League Friends") {
+  if (leagueFriendsGuild)
+  {
     emojiNames.forEach(function (name) {
-      var thisEmoji = message.guild.emojis.find(emoji => emoji.name === name);
+      var thisEmoji = leagueFriendsGuild.emojis.find(emoji => emoji.name === name);
       if (thisEmoji !=  null)
         emojis.push(thisEmoji);
     });
   }
 
+  console.log("I am ready to troll!");
+});
+
+//PRIMARY MESSAGE PROCESSING THREAD:
+client.on("message", (message) => {
   var date = new Date();
   var today = date.getDate();
 
