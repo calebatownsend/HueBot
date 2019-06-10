@@ -143,6 +143,36 @@
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
+        },
+        {
+            "phrase": "how many times do i have to paste admins for it to reply.",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "I feel like the admins have really lacked the energy needed to continue the progression of implementing features needed to keep a strong community",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "Let me know if anyone wants to join a thriving discord community. I’m an admin there. We follow rules and demand transparency from all, including the admins.",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "Weird. All my chats re appeared after I called the admins out.",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "Yall are on a power trip. I love it. Got myself a warned badge now",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
         }
     ],
     "invite": [
@@ -166,6 +196,38 @@
         }
     ],
     "ellie": [
+        {
+            "phrase": "I love my pupper too",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "would u adopt a dog u thought was ugly?",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "can we get a puppers chat",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "My dog will have diarrhea if we don’t transition her slowly to new food",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "Does archer have a steel trap of a stomach?",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        }
+    ],
+    "pupper": [
         {
             "phrase": "I love my pupper too",
             "probabilityModifier": "0",
@@ -272,5 +334,43 @@
             "timesUsed": "0",
             "responseType": "send"
         }
+    ],
+
+    "ide": [
+        {
+            "phrase": "A senior dev can’t figure out how to setup their environment? Sad!",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        }
+    ],
+    "meme": [
+        {
+            "phrase": "Why are memes not in the meme channel.",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "please use the meme channel to post memes, thank you",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        }
+    ],
+    "paid": [
+        {
+            "phrase": "Should be free.",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "too expensive",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        }
     ]
+
 }
