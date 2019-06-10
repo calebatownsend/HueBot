@@ -1,6 +1,10 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const config = require('./config.json');
+const lfGuildID = "144653611819859969"; // "League Friends" server ID
+
+var botInterface = require('./botInterface.js');
+var messageAnalyzer = require('./messageAnalyze.js');
 
 //RESPONSE PERCENTAGES:
 //The percent that HueBot will respond if trigger is found.
@@ -13,8 +17,6 @@ const baseChannelResponsePercent = 1;
 //The percent that HueBot will react to a given message
 const baseChannelReactionPercent = 1;
 
-var messageAnalyzer = require('./messageAnalyze.js');
-
 let emojiNames = ["donny","skwondering","uhhuh","thinking","caleb","santarich","josh","swiss","jeremy","van","gray","chase","ray","toottoot","kevin","skno","skdrunk","tyler","ashley"];
 let emojis = [];
 
@@ -26,18 +28,35 @@ let dibstore = JSON.parse(rawdata);
 console.log(dibstore);
 
 client.on("ready", () => {
+  //load emoji objects
+  var leagueFriendsGuild = client.guilds.find(guild => {
+    return guild.id === lfGuildID;
+  });
+
+  if (leagueFriendsGuild)
+  {
+    emojiNames.forEach(function (name) {
+      var thisEmoji = leagueFriendsGuild.emojis.find(emoji => emoji.name === name);
+      if (thisEmoji !=  null)
+        emojis.push(thisEmoji);
+    });
+  }
+
   console.log("I am ready to troll!");
 });
 
 //PRIMARY MESSAGE PROCESSING THREAD:
 client.on("message", (message) => {
-  //load emoji objects if necessary
-  if (emojis.length == 0 && message.guild.name == "League Friends") {
-    emojiNames.forEach(function (name) {
-      var thisEmoji = message.guild.emojis.find(emoji => emoji.name === name);
-      if (thisEmoji !=  null)
-        emojis.push(thisEmoji);
-    });
+  var huebotMention = message.mentions.users.find(user => {
+    return user.id === client.user.id;
+  });
+
+  if (huebotMention)
+  {
+    var UserCommand = botInterface.commandParser.Parse(client, message);
+    if (UserCommand) {
+      UserCommand.Execute();
+    }
   }
 
   var date = new Date();
