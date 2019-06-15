@@ -313,6 +313,18 @@
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
+        },
+        {
+            "phrase": "reviews",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "I don't trust reviews any more than I would trust a $400 TV on a $30 TV stand",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
         }
     ],
     "huebot": [
@@ -330,6 +342,18 @@
         },
         {
             "phrase": "dang, huebot must have a large list of replies since the majority of them have only been sent one time",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "I don't take orders from you",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "reply"
+        },
+        {
+            "phrase": "hello?",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"

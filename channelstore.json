@@ -47,6 +47,18 @@
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "reply"
+        },
+        {
+            "phrase": "I think any exercise like that is alright as long as you keep it in the orange zone",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "reply"
+        },
+        {
+            "phrase": "Z E R O C A L S",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "reply"
         }
     ],
     "main": [
@@ -81,7 +93,7 @@
             "responseType": "send"
         },
         {
-            "phrase": "back in america boys",
+            "phrase": "this dm tho",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -123,6 +135,12 @@
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
+        },
+        {
+            "phrase": "so nobody is going to play planet zoo? :(",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
         }
     ],
     "sports": [
@@ -158,6 +176,55 @@
         },
         {
             "phrase": "back in america boys",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        }],
+    "politics": [
+        {
+            "phrase": "MAGA",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "You guys think way too hard",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "baited",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "I know Jeremy studies this day and night and I can’t compete with that",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "I’m not educated enough to get super in the weeds on this. Sorry.",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "do not bother reading the above. It’s not that interesting.",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "My foot fell asleep reading all this on the toilet.",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "The echo chamber of liberals in here is real lmao.",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
