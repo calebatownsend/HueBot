@@ -75,7 +75,7 @@
             "responseType": "send"
         },
         {
-            "phrase": "wat",
+            "phrase": "Rich stood me up",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -275,6 +275,50 @@
         },
         {
             "phrase": "this dm tho",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        }
+    ],
+    "techtalk": [
+        {
+            "phrase": "whats an mp3",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "this is tech talk... what does that have to do with technology",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "very techy, thank you",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "is this where we talk about food? I have a cool kombucha recipie to share",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "SCAM!!",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "who cares if it will never happen",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "Damn Kyle how many miles on that Tacoma now",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
