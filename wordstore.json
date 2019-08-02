@@ -263,6 +263,12 @@
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
+        },
+        {
+            "phrase": "He hates dogs so you should’ve gone to a dog park????",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
         }
     ],
     "pupper": [
@@ -479,6 +485,12 @@
         },
         {
             "phrase": "They all take themselves too serious",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "Hey guys i want to be your president! jk im just doing this to bring a passion of mine to the stage",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
