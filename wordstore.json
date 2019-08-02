@@ -13,7 +13,7 @@
             "responseType": "send"
         },
         {
-            "phrase": "Sarah Huckabee is a national treasure.",
+            "phrase": "Trump retweeted a pic that said the democrats are the true enemy of the people but I guess he deleted it.",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -32,6 +32,12 @@
         },
         {
             "phrase": "baited",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "There’s no way trump did something positive. ",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -86,6 +92,38 @@
         },
         {
             "phrase": "FOTM",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        }
+    ],
+    "pubg": [
+        {
+            "phrase": "I'd rather play apex",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "dead game",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "jerm still plays",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "pochinki is my city",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "do people even still play that",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -267,7 +305,13 @@
             "responseType": "send"
         },
         {
-            "phrase": "trash music",
+            "phrase": "I try not to listen to trash music",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "Outside cardio",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -391,6 +435,50 @@
         },
         {
             "phrase": "too expensive",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "lol you paid that much?",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "i wouldn't trust something that cheap",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        }
+    ],
+    "debate": [
+        {
+            "phrase": "I highly doubt anyone on that stage is busting their ass just to bring a topic to light but maybe I’m wrong",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "I want private insurance",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "Newsflash, UBI isn't going to work",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "Bernie will not win the nomination",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "They all take themselves too serious",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"

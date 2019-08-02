@@ -228,6 +228,56 @@
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
+        },
+        {
+            "phrase": "I know you guys love the hill",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "If you think that trump has nothing to do with the economy then you are dead wrong.",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        }
+    ],
+    "financial": [
+        {
+            "phrase": "Weird how when the stock market and our retirement accounts are doing well nothing is said.",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "If you think that trump has nothing to do with the economy then you are dead wrong.",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "wat",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "Lmfao Why are you reinventing the wheel? I’m sure this already exists",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "LMAO",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "this dm tho",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
         }
     ]
 }
