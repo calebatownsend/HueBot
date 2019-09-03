@@ -12,7 +12,7 @@ const baseHotwordResponsePercent = 18;
 
 //The percent that HueBot will respond with a general phrase. 
 //Needs to be much lower than Hotword response because this is against every message in the channel.
-const baseChannelResponsePercent = 1;
+const baseChannelResponsePercent = 2;
 
 //The percent that HueBot will react to a given message
 const baseChannelReactionPercent = 1;

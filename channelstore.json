@@ -59,6 +59,18 @@
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "reply"
+        },
+        {
+            "phrase": "I’ll take a video of you curling 40s for 10 reps with a flat back and proper form",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "reply"
+        },
+        {
+            "phrase": "Curl 40 btw",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "reply"
         }
     ],
     "main": [
@@ -94,6 +106,12 @@
         },
         {
             "phrase": "this dm tho",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "huebot is buggy",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -183,6 +201,12 @@
     "politics": [
         {
             "phrase": "MAGA",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "you know thats satire right?",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -306,7 +330,19 @@
             "responseType": "send"
         },
         {
+            "phrase": "It’s as if technology keeps progressing and we have to keep updating apps!",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
             "phrase": "SCAM!!",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "are you blaming QA For bugs you created? Its not just their fault ! ",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
