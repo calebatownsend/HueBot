@@ -1,12 +1,6 @@
 {
     "trump": [
         {
-            "phrase": "Trump said it, therefore we must disagree with it HUE",
-            "probabilityModifier": "0",
-            "timesUsed": "0",
-            "responseType": "send"
-        },
-        {
             "phrase": "Honestly I'm slowly becoming more and more moderate in my views",
             "probabilityModifier": "0",
             "timesUsed": "0",
@@ -37,7 +31,7 @@
             "responseType": "send"
         },
         {
-            "phrase": "There’s no way trump did something positive. ",
+            "phrase": "my dad gave me a bunch of THD when I got married and I immediately sold it for honeymoon money lol",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -52,6 +46,18 @@
         },
         {
             "phrase": "Is this a low trust factor game?",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "csgo is so boring now",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "rich is too scared to play with jeff lul",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -77,7 +83,19 @@
             "responseType": "send"
         },
         {
+            "phrase": "Speaking of Atlanta, I was accidentally added, but am curious why I was once again removed.",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
             "phrase": "Most people realize the shitty parts of atlanta include around GT and near college park",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "Chi-ro should walk through college park alone",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -92,6 +110,18 @@
         },
         {
             "phrase": "FOTM",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "remember when we used to play league of legends?",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "do people even still play that",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -365,7 +395,7 @@
             "responseType": "send"
         },
         {
-            "phrase": "reviews",
+            "phrase": "I feel like I cannot watch something unless it has a good review.",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -385,7 +415,7 @@
             "responseType": "send"
         },
         {
-            "phrase": "how many times do i have to paste admins for it to reply",
+            "phrase": "what makes you think im going to respond",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -407,12 +437,43 @@
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
+        },
+        {
+            "phrase": "please don't call me out. I am just on other discord servers that are much more cleanly organized",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
         }
     ],
 
-    "development": [
+    "troll": [
+        {
+            "phrase": "Yall can troll, but I can't. how neat",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "i learned to troll from the very best",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "i mean is trolling not allowed on this server?",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        }
+    ],    "development": [
         {
             "phrase": "A senior dev can’t figure out how to setup their environment? Sad!",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "senior QA, btw",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -427,6 +488,24 @@
         },
         {
             "phrase": "please use the meme channel to post memes, thank you",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "lol thats actually really funny",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "playing up to the meme, i love it",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "A meme troller you say?",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -491,6 +570,44 @@
         },
         {
             "phrase": "Hey guys i want to be your president! jk im just doing this to bring a passion of mine to the stage",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        }
+    ],
+    "lmao": [
+        {
+            "phrase": "what's funny?",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "reply"
+        },
+        {
+            "phrase": "why is that funny?",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "hahaha",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "Lmao this is funny",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "They all take themselves too serious",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": ".",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"

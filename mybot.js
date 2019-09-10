@@ -12,12 +12,12 @@ const baseHotwordResponsePercent = 18;
 
 //The percent that HueBot will respond with a general phrase. 
 //Needs to be much lower than Hotword response because this is against every message in the channel.
-const baseChannelResponsePercent = 2;
+const baseChannelResponsePercent = 1;
 
 //The percent that HueBot will react to a given message
 const baseChannelReactionPercent = 1;
 
-let emojiNames = ["donny","skwondering","uhhuh","thinking","caleb","santarich","josh","swiss","jeremy","van","gray","chase","ray","toottoot","kevin","skno","skdrunk","tyler","ashley"];
+let emojiNames = ["wheelchair","skparty","garbosnail","sksun","skfacepalm","sksleepy","poop","donny","skwondering","uhhuh","thinking","caleb","santarich","josh","swiss","jeremy","van","gray","chase","ray","toottoot","kevin","skno","skdrunk","tyler","hue"];
 let emojis = [];
 
 const fs = require('fs');

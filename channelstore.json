@@ -52,10 +52,10 @@
             "phrase": "I think any exercise like that is alright as long as you keep it in the orange zone",
             "probabilityModifier": "0",
             "timesUsed": "0",
-            "responseType": "reply"
+            "responseType": "send"
         },
         {
-            "phrase": "Z E R O C A L S",
+            "phrase": "do you still think creatine dehydrates you even though research has proven otherwise?",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "reply"
@@ -75,7 +75,31 @@
     ],
     "main": [
         {
+            "phrase": "y can i not generate discord invites",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },           
+        {
+            "phrase": "please remind me why I am warned, and why I was kicked? Thanks!",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "reply"
+        },       
+        {
+            "phrase": "How neat",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
             "phrase": "who cares",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "can the admins please move opt in channels to the opt in category. Thanks!",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -137,6 +161,12 @@
             "responseType": "send"
         },
         {
+            "phrase": "This sounds like a DM",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
             "phrase": "I deserve transparency from the 'admin' team",
             "probabilityModifier": "0",
             "timesUsed": "0",
@@ -155,7 +185,13 @@
             "responseType": "send"
         },
         {
-            "phrase": "so nobody is going to play planet zoo? :(",
+            "phrase": "so nobody is going to play borderlands 3? :(",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "trigger warning ^",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -163,7 +199,7 @@
     ],
     "sports": [
         {
-            "phrase": "40k viewers on twitch YIKES",
+            "phrase": "please stay on the topic designated for this channel",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -204,9 +240,21 @@
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
+        },       
+        {
+            "phrase": "Wtf",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
         },
         {
             "phrase": "you know thats satire right?",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "reply"
+        },
+        {
+            "phrase": "rip",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -260,7 +308,7 @@
             "responseType": "send"
         },
         {
-            "phrase": "If you think that trump has nothing to do with the economy then you are dead wrong.",
+            "phrase": "Y’all can protest",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -302,6 +350,12 @@
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
+        },
+        {
+            "phrase": "my real estate agent said she starts to worry if a house hasnt been sold within a week",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
         }
     ],
     "techtalk": [
@@ -330,19 +384,7 @@
             "responseType": "send"
         },
         {
-            "phrase": "It’s as if technology keeps progressing and we have to keep updating apps!",
-            "probabilityModifier": "0",
-            "timesUsed": "0",
-            "responseType": "send"
-        },
-        {
             "phrase": "SCAM!!",
-            "probabilityModifier": "0",
-            "timesUsed": "0",
-            "responseType": "send"
-        },
-        {
-            "phrase": "are you blaming QA For bugs you created? Its not just their fault ! ",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -358,6 +400,99 @@
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
+        },
+        {
+            "phrase": "This isn't developers chat btw",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
         }
-    ]
+    ],
+    "developers": [
+        {
+            "phrase": "It’s as if technology keeps progressing and we have to keep updating apps!",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },        
+        {
+            "phrase": "oh you're the guy who pulls out your job description when you are asked to do something, huh?",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "are you blaming QA For bugs you created? Its not just their fault ! ",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "why do i have to handhold someone to upgrade their visual studio",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "what’s the difference between dev and workplace? Doesn’t workplace fall under development?",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "reply"
+        },
+        {
+            "phrase": "New dev just opened a pr and there’s like 50 compile errors lol",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "Got my whole team checking out data grip",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "everytime i go for an interview my boss asks if its for an interview lol",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        }
+    ],
+    "music": [
+        {
+            "phrase": "please stop adding me to random channels",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "lol that music is trash",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "reply"
+        },
+        {
+            "phrase": "i try to only listen to good music",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "?rank music",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "lool",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "i didn't peg you as a heavy metal kinda guy",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "reply"
+        }]
 }
