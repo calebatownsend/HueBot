@@ -99,6 +99,12 @@
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
+        },
+        {
+            "phrase": "Anybody’s company need a qa Engineer? Looking to relo to Atlanta.",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
         }
     ],
     "apex": [
@@ -193,6 +199,32 @@
             "responseType": "send"
         }
     ],
+    "iphone": [
+        {
+            "phrase": "I'll buy anything if its shiny and made by apple",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "so much better than samsung",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "Android phones just feel cheap, ya feel me HUE",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "leasing my new iphone for $1400 LEGGO",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        }
+    ],
     "admin": [
         {
             "phrase": "These admins are terrible. I'm starting my own server if ya'll would like to join.",
@@ -243,7 +275,38 @@
             "responseType": "send"
         }
     ],
-    "invite": [
+    "georgia": [
+        {
+            "phrase": "GO DAWGS!",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "I'm in athens for the weekend",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "lmao gt is so bad",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "Are they running the triple option or not?",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "gt football lul",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        }
+    ],    "invite": [
         {
             "phrase": "heck",
             "probabilityModifier": "0",
@@ -381,6 +444,26 @@
             "responseType": "send"
         }
     ],
+    "abortion": [
+        {
+            "phrase": "it bothers me how liberal yall have become",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "I honestly can't comment on the subject",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "planned parenthood is a good solution",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "reply"
+        }
+    ],
     "review": [
         {
             "phrase": "Wait so do we trust the reviews or no?",
@@ -445,7 +528,38 @@
             "responseType": "send"
         }
     ],
-
+    "beer": [
+        {
+            "phrase": "Dude i work with said he only drinks 3-4 beers a night now lol",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "Heck I bet drew is already drunk",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "not that cheap ass beer you drink",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "reply"
+        },
+        {
+            "phrase": "Lol I remember when kyle tossed his beer bottle out in the road at Harding ",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "reply"
+        },
+        {
+            "phrase": "Drinking a beer during work?",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "reply"
+        }
+    ], 
     "troll": [
         {
             "phrase": "Yall can troll, but I can't. how neat",
@@ -465,7 +579,84 @@
             "timesUsed": "0",
             "responseType": "send"
         }
-    ],    "development": [
+    ],      "gay": [
+        {
+            "phrase": "Christians hate gays right??",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "TIL gray is scared of gays",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "that doesn't fit the stereotype of a Christian",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        }
+    ], 
+    "nashville": [
+        {
+            "phrase": "North Nashville in the hood lol",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": " enter shikari is playing in nashville in september",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "Thx! Pretty sure I’m staying in Nashville for now. My house needs to gain more value",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        }
+    ],     "qa": [
+        {
+            "phrase": "I'm actually not a jr qa anymore. I haven't been since last month",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "are u blaming qa for bugs u created?",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "reply"
+        },
+        {
+            "phrase": "So QA should remain manual?",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "i hate that QA is treated as second class citizens at some companies",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "Current job I thought my boss would be able to teach me a lot, but in this work environment everything that goes wrong is QA's fault so I'm dippin out",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "and apparently we had offshore QA who never actually tested shit lol",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        }
+    ], 
+      "development": [
         {
             "phrase": "A senior dev can’t figure out how to setup their environment? Sad!",
             "probabilityModifier": "0",
@@ -570,6 +761,94 @@
         },
         {
             "phrase": "Hey guys i want to be your president! jk im just doing this to bring a passion of mine to the stage",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        }
+    ],
+    "amazon": [
+        {
+            "phrase": "TIL kohl’s will return amazon packages",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": " Amazon reimbursed me for my return but I just got the monitor I returned back in the mail wtf lol",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "Just got a juicy $800 gift card for amazon to take a flight tomorrow",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "it is insane that ring was sold to amazon for 1 billion dollars",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "What do I do if my amazon package says it was delivered but it wasn’t.",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "The downfall of amazon is upon us",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "Amazon said that my package delivered but I couldn't find it. Sad!",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        }
+    ],
+    "apple": [
+        {
+            "phrase": "damn. my coworker has 3 apple homepods wtf lol",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "I’m an Apple boy.",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "I thought only Apple made expensive flagships",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "Should I get an Apple Watch",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "Are you arguing that the play store has the same amount of garbage apps as the apple app store? LOL",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "Sucks. iOS would be able to push a patch out quickly. Sucks that OEMs and carriers can't get this out as quickly as Apple!",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "Gray you used to be all about Apple lmao",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
