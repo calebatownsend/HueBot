@@ -105,6 +105,12 @@
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
+        },
+        {
+            "phrase": "I want the humidity to go away but we pretty much live in a rainforest so I guess I'll just die",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
         }
     ],
     "apex": [

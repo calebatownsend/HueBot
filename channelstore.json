@@ -85,7 +85,13 @@
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "reply"
-        },       
+        },    
+        {
+            "phrase": "I used to be buzzed off one drank",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "reply"
+        },      
         {
             "phrase": "How neat",
             "probabilityModifier": "0",
@@ -136,6 +142,18 @@
         },
         {
             "phrase": "huebot is buggy",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "Theyre called mom jeans ray",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "got any vapers in the house?",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -236,7 +254,7 @@
         }],
     "politics": [
         {
-            "phrase": "MAGA",
+            "phrase": "thats some hard hitting stuff right there",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -254,7 +272,7 @@
             "responseType": "reply"
         },
         {
-            "phrase": "rip",
+            "phrase": "You know it's bad when even Fox News is taking hits on trump",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -308,7 +326,19 @@
             "responseType": "send"
         },
         {
-            "phrase": "Y’all can protest",
+            "phrase": "Not even worth a response lmfao",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "I've betrayed my conservative roots",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "I agree gray",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -403,6 +433,12 @@
         },
         {
             "phrase": "This isn't developers chat btw",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "How is Pirate Bay back",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
