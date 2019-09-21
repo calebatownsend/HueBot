@@ -331,6 +331,56 @@
             "timesUsed": "0",
             "responseType": "send"
         }
+    ],    "popular": [
+        {
+            "phrase": "10 million people can't be wrong",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "so is there a reason so many people like it or what?",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "you wish you were popular",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "peppame bueno",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        }
+    ],"disagree": [
+        {
+            "phrase": "10 million people can't be wrong",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "i tend to think the majority is correct",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "so why do so many people disagree with you then",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "reply"
+        },
+        {
+            "phrase": "LMAO not even worth a response",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "reply"
+        }
     ],
     "ellie": [
         {
