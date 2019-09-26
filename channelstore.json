@@ -276,7 +276,12 @@
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
-        },       
+        },             {
+            "phrase": "are you incapable of understanding the point?",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },         
         {
             "phrase": "Wtf",
             "probabilityModifier": "0",
@@ -357,6 +362,24 @@
         },
         {
             "phrase": "I agree gray",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "i still hold gray responsible",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "you mean candidates try to make the opposing party look bad?",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "I mean Jeremy is the guy that said the tsa is the same as secret service",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"

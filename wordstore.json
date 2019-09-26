@@ -380,6 +380,12 @@
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "reply"
+        },
+        {
+            "phrase": "are you incapable of understanding the point?",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "reply"
         }
     ],
     "ellie": [
@@ -495,6 +501,18 @@
         },
         {
             "phrase": "I honestly can't comment on the subject",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "what european country is socialist?",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "also government has a hell of a lot too much power. I can't believe I am having state this lmao",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -634,6 +652,12 @@
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
+        },
+        {
+            "phrase": "wait you weren't trolling? lmao!!",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
         }
     ],      "gay": [
         {
@@ -655,9 +679,34 @@
             "responseType": "send"
         }
     ], 
-    "nashville": [
+    "secret service": [
         {
-            "phrase": "North Nashville in the hood lol",
+            "phrase": "that sniper on the roof is just to make you feel safe",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "basically the same as TSA",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "why does have security measures for a political person have to  automatically be security theater lol",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "you're trying to say that precautions and security == security theater",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        }
+    ],      "nashville": [
+        {
+            "phrase": "way safer than atlanta",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"

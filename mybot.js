@@ -89,14 +89,28 @@ client.on("message", (message) => {
   }
 
   //back to work responses
-  if (dibstore[userid]["messages"] == 200 && date.getHours() < 18) {
+  if (dibstore[userid]["messages"] == 200 && date.getHours() < 17) {
     reply(message, "TWO HUNDRED MESSAGES TODAY. getting any work done??");
   }
-  else if (dibstore[userid]["messages"] == 100 && date.getHours() < 18) {
+  else if (dibstore[userid]["messages"] == 100 && date.getHours() < 17) {
     reply(message, "does your boss know you are on discord? hue");
   }
-  else if (dibstore[userid]["messages"] == 50 && date.getHours() < 18) {
+  else if (dibstore[userid]["messages"] == 50 ) {
+    if (date.getHours() < 13){
     reply(message, "you've been on Discord a lot today. Taking a long lunch?");
+    if ((Math.random() * 100) > 80)
+    {
+      send(message, "get some new material HueBot you unorginal hack");
+    }
+    }
+    else if (date.getHours() < 14)
+    reply(message, "I hope they aren't paying you to chat with your friends");
+    else if (date.getHours() < 15)
+    reply(message, "are you using discord on your phone or the computer? you've been online a lot today is all");
+    else if (date.getHours() < 16)
+    reply(message, "how do you have time at work to type all this stuff lol");
+    else if (date.getHours() < 17)
+    reply(message, "still at work chatting with your friends lol. just go home");
   }
   else {
     var response = messageAnalyzer.getPhraseforHotwords(message.content);
