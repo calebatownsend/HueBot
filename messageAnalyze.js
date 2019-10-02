@@ -24,5 +24,19 @@ module.exports = {
             }
         }
         return null;
+    },
+
+
+    checkForComo:function (message){
+            if (message.toLowerCase().includes("como")) {
+                var combinedStore = Object.assign({},wordstore, channelstore);
+                var channelstoreKeys = Object.keys(channelstore);
+                var wordstoreKeys = Object.keys(wordstore);
+                var combinedKeys = channelstoreKeys.concat(wordstoreKeys);
+                let selectedKey = combinedKeys[Math.floor(Math.random() * combinedKeys.length)];
+                return combinedStore[selectedKey][Math.floor(Math.random() * combinedStore[selectedKey].length)]
+            }
+        
+        return null;
     }
 }

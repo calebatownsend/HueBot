@@ -175,6 +175,12 @@
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
+        },
+        {
+            "phrase": "Soco flowin",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
         }
     ],
     "gaming": [
@@ -383,6 +389,12 @@
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
+        },
+        {
+            "phrase": "are you defending her???",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "reply"
         }
     ],
     "financial": [

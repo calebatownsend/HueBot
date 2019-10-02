@@ -386,6 +386,12 @@
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "reply"
+        },
+        {
+            "phrase": "I appreciate the loaded question.",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "reply"
         }
     ],
     "ellie": [
@@ -828,6 +834,12 @@
         },
         {
             "phrase": "i wouldn't trust something that cheap",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "As a worst case scenario I’m pretty sure these places offer payment plans.",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"

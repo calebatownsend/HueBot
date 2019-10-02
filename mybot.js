@@ -133,6 +133,15 @@ client.on("message", (message) => {
         }
       }
     }
+    response = messageAnalyzer.checkForComo(message.content);
+    if (response != null &&  (dibstore[userid]["messages"] < 10 )) {
+
+        if (response.responseType == "send")
+          send(message, response.phrase);
+        else
+          reply(message, response.phrase);
+      
+    }
     if (rollPercent(baseChannelReactionPercent)) {
       message.react(emojis[Math.floor(Math.random() * emojis.length)]);
     }
