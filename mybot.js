@@ -46,7 +46,7 @@ client.on("ready", () => {
 });
 
 client.on('messageUpdate', (oldMessage, newMessage) => {
-  if(rollPercent(30)){
+  if(rollPercent(30) && newMessage.embeds.length == 0 ){
     switch(Math.floor(Math.random() * 5)){
     case 0:
         send(newMessage, "nice edit");
