@@ -46,8 +46,8 @@ client.on("ready", () => {
 });
 
 client.on('messageUpdate', (oldMessage, newMessage) => {
-  if(rollPercent(20)){
-    switch(Math.floor(Math.random() * 4)){
+  if(rollPercent(30)){
+    switch(Math.floor(Math.random() * 5)){
     case 0:
         send(newMessage, "nice edit");
     break;
@@ -79,6 +79,9 @@ client.on('messageUpdate', (oldMessage, newMessage) => {
         reply(newMessage, "great typing my man");
 
     break;
+    case 4:
+        send(newMessage, "'" + oldMessage.content + "'" + "? COMO");
+        break;
 
     }
 

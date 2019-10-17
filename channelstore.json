@@ -461,7 +461,7 @@
             "responseType": "send"
         },
         {
-            "phrase": "is this where we talk about food? I have a cool kombucha recipie to share",
+            "phrase": "Such a technology focused conversation",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -479,7 +479,7 @@
             "responseType": "send"
         },
         {
-            "phrase": "Damn Kyle how many miles on that Tacoma now",
+            "phrase": "Got some armchair scientists",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
