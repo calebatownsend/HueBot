@@ -45,6 +45,46 @@ client.on("ready", () => {
   console.log("I am ready to troll!");
 });
 
+client.on('messageUpdate', (oldMessage, newMessage) => {
+  if(rollPercent(20)){
+    switch(Math.floor(Math.random() * 4)){
+    case 0:
+        send(newMessage, "nice edit");
+    break;
+    case 1:
+        reply(newMessage, "lmao we all saw that");
+    break;
+    case 2:
+        send(newMessage, "u should have just left it");
+    break;
+    case 3:
+        var shorterLength = Math.min(oldMessage.content.length, newMessage.content.length);
+        var diffIndex = -1;
+        for (var i = 0; i < shorterLength; i++)
+        {
+            if (oldMessage.content[i] !== newMessage.content[i]) 
+            {
+              diffIndex = i;
+              break;
+            }
+        }
+        if (diffIndex != -1)
+        {
+          var substring = oldMessage.content.substring(diffIndex,oldMessage.content.length);
+          var spaceIndex = oldMessage.content.indexOf(' ');
+          substring = substring.substring(0,spaceIndex-1);
+          send(newMessage, substring + "? LMAO");
+        }
+        else 
+        reply(newMessage, "great typing my man");
+
+    break;
+
+    }
+
+  }
+});
+
 //PRIMARY MESSAGE PROCESSING THREAD:
 client.on("message", (message) => {
   var huebotMention = message.mentions.users.find(user => {
