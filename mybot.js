@@ -80,7 +80,7 @@ client.on('messageUpdate', (oldMessage, newMessage) => {
 
     break;
     case 4:
-        send(newMessage, "'" + oldMessage.content + "'" + "? COMO");
+        send(newMessage, "'" + oldMessage.content + "'" + " COMO");
         break;
 
     }
