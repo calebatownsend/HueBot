@@ -3,7 +3,11 @@ const client = new Discord.Client();
 const config = require('./config.json');
 const lfGuildID = "144653611819859969"; // "League Friends" server ID
 
-var botInterface = require('./botInterface.js');
+var interfaces = {
+  bot: require('./botInterface.js'),
+  database: require('./dbInterface.js')
+}
+
 var messageAnalyzer = require('./messageAnalyze.js');
 
 //RESPONSE PERCENTAGES:
@@ -19,13 +23,6 @@ const baseChannelReactionPercent = 1;
 
 let emojiNames = ["wheelchair","skparty","garbosnail","sksun","skfacepalm","sksleepy","poop","donny","skwondering","uhhuh","thinking","caleb","santarich","josh","swiss","jeremy","van","gray","chase","ray","toottoot","kevin","skno","skdrunk","tyler","hue"];
 let emojis = [];
-
-const fs = require('fs');
-
-//loading store for users and number of messages
-let rawdata = fs.readFileSync('dibstore.json');
-let dibstore = JSON.parse(rawdata);
-console.log(dibstore);
 
 client.on("ready", () => {
   //load emoji objects
@@ -96,49 +93,26 @@ client.on("message", (message) => {
 
   if (huebotMention)
   {
-    var UserCommand = botInterface.commandParser.Parse(client, message);
+    var UserCommand = interfaces.bot.commandParser.Parse(client, message);
     if (UserCommand) {
       UserCommand.Execute();
     }
   }
 
   var date = new Date();
-  var today = date.getDate();
+  
+  var dbInterface = new interfaces.database.dbInterface().init();
 
-  //reset the message counts if it's the next day
-  if (today != dibstore["date"]) {
-    for (var key in dibstore) {
-      if (key != "date") {
-        var obj = dibstore[key];
-        obj["messages"] = 0;
-      }
-    }
-    dibstore["date"] = today;
-  }
-
-  var userid = message.author.id;
-
-  //check if new user
-  if (dibstore[userid] == null) {
-    dibstore[userid] = { "messages": 1, "username": message.author.username }
-  }
-  else {
-    dibstore[userid]["messages"]++;
-  }
-
-  //check if username exists for user
-  if (!dibstore[userid]["username"]) {
-    dibstore[userid]["username"] = message.author.username;
-  }
+  var messageCount = dbInterface.incrementUserMessages(message.author);
 
   //back to work responses
-  if (dibstore[userid]["messages"] == 200 && date.getHours() < 17) {
+  if (messageCount == 200 && date.getHours() < 17) {
     reply(message, "TWO HUNDRED MESSAGES TODAY. getting any work done??");
   }
-  else if (dibstore[userid]["messages"] == 100 && date.getHours() < 17) {
+  else if (messageCount == 100 && date.getHours() < 17) {
     reply(message, "does your boss know you are on discord? hue");
   }
-  else if (dibstore[userid]["messages"] == 50 ) {
+  else if (messageCount == 50 ) {
     if (date.getHours() < 13){
     reply(message, "you've been on Discord a lot today. Taking a long lunch?");
     if ((Math.random() * 100) > 80)
@@ -177,7 +151,7 @@ client.on("message", (message) => {
       }
     }
     response = messageAnalyzer.checkForComo(message.content);
-    if (response != null &&  (dibstore[userid]["messages"] < 10 )) {
+    if (response != null &&  (messageCount < 10 )) {
 
         if (response.responseType == "send")
           send(message, response.phrase);
@@ -190,8 +164,7 @@ client.on("message", (message) => {
     }
   }
   
-  //save message numbers
-  fs.writeFileSync('dibstore.json', JSON.stringify(dibstore));
+  dbInterface.saveChanges();
 });
 
 //Connect to Discord
