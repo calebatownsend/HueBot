@@ -129,7 +129,7 @@
             "responseType": "send"
         },
         {
-            "phrase": "LMAO",
+            "phrase": "I’ll consider what you said a white lie above",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -183,6 +183,44 @@
             "responseType": "send"
         }
     ],
+    "birthday": [
+        {
+            "phrase": "I remember on my birthday I got a total of zero HBDs here.",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "happy birthday",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "reply"
+        },
+        {
+            "phrase": "Y'all missed a birthday",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "4all2c",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "reply"
+        },
+        {
+            "phrase": "im a birthday boy in september",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "i thought we had the same birthday lmao como",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        }
+    ],
     "gaming": [
         {
             "phrase": "who cares",
@@ -209,7 +247,7 @@
             "responseType": "send"
         },
         {
-            "phrase": "I deserve transparency from the 'admin' team",
+            "phrase": "Seems random to be playing such an old game",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -343,7 +381,7 @@
             "responseType": "send"
         },
         {
-            "phrase": "The echo chamber of liberals in here is real lmao.",
+            "phrase": "did you think that article is real when you posted the link?",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -391,7 +429,7 @@
             "responseType": "send"
         },
         {
-            "phrase": "are you defending her???",
+            "phrase": "if trump doesnt like it then its fake! whisteblower is committing treason!",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "reply"
@@ -417,7 +455,7 @@
             "responseType": "send"
         },
         {
-            "phrase": "Lmfao Why are you reinventing the wheel? I’m sure this already exists",
+            "phrase": "Passive income is sketchy. Feels like prosperity gospel. Pay me for classes to get rich!",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -436,6 +474,12 @@
         },
         {
             "phrase": "my real estate agent said she starts to worry if a house hasnt been sold within a week",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "My credit score went down to 793 recently",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -473,7 +517,7 @@
             "responseType": "send"
         },
         {
-            "phrase": "who cares if it will never happen",
+            "phrase": "im not in tech talk to discuss air frying wings",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -535,7 +579,7 @@
             "responseType": "send"
         },
         {
-            "phrase": "Got my whole team checking out data grip",
+            "phrase": "Senior btw",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"

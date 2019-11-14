@@ -1,25 +1,25 @@
 {
     "trump": [
         {
-            "phrase": "Honestly I'm slowly becoming more and more moderate in my views",
+            "phrase": "thats called politics, yes trump has taken it next level",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
         },
         {
-            "phrase": "Trump retweeted a pic that said the democrats are the true enemy of the people but I guess he deleted it.",
+            "phrase": "trump is so ADD. hes talking about china when hes supposed to be talking about the stanley cup.",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
         },
         {
-            "phrase": "its a free country, btw",
+            "phrase": "Apparently trumps press secretary confirmed its real wtf lol",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
         },
         {
-            "phrase": "at least trump isnt a dictator",
+            "phrase": "at least trump isnt a king",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -31,7 +31,7 @@
             "responseType": "send"
         },
         {
-            "phrase": "my dad gave me a bunch of trump when I got married and I immediately sold it for honeymoon money lol",
+            "phrase": "I hate trump but I hate socialists more",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -568,6 +568,12 @@
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
+        },
+        {
+            "phrase": "Do AAA companies always buy reviews btw?",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
         }
     ],
     "huebot": [
@@ -776,6 +782,33 @@
         },
         {
             "phrase": "senior QA, btw",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        }
+    ], 
+    "kanye": [
+        {
+            "phrase": "He does support trump tho. Gotta be mentally challenged",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "??? I take Kanye to be genuine",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "Jesus is king ain’t bad",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        ,
+        {
+            "phrase": "doesn’t fit the CEO stereotype! Sad!",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
