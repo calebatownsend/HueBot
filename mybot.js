@@ -3,23 +3,19 @@ const client = new Discord.Client();
 const config = require('./config.json');
 const lfGuildID = "144653611819859969"; // "League Friends" server ID
 
+var messageAnalyzer = require('./messageAnalyze.js');
+
 var interfaces = {
   bot: require('./botInterface.js'),
   database: require('./dbInterface.js')
 }
 
-var messageAnalyzer = require('./messageAnalyze.js');
-
 //RESPONSE PERCENTAGES:
-//The percent that HueBot will respond if trigger is found.
-const baseHotwordResponsePercent = 16;
-
-//The percent that HueBot will respond with a general phrase. 
-//Needs to be much lower than Hotword response because this is against every message in the channel.
-const baseChannelResponsePercent = 1;
-
-//The percent that HueBot will react to a given message
-const baseChannelReactionPercent = 1;
+responseProbability = {
+  hotword: 16,  //The percent that HueBot will respond if trigger is found.
+  channel: 1,   //The percent that HueBot will respond with a general phrase; Needs to be much lower than Hotword response because this is against every message in the channel.
+  reaction: 1   //The percent that HueBot will react to a given message
+}
 
 let emojiNames = ["wheelchair","skparty","garbosnail","sksun","skfacepalm","sksleepy","poop","donny","skwondering","uhhuh","thinking","caleb","santarich","josh","swiss","jeremy","van","gray","chase","ray","toottoot","kevin","skno","skdrunk","tyler","hue"];
 let emojis = [];
@@ -114,52 +110,40 @@ client.on("message", (message) => {
   }
   else if (messageCount == 50 ) {
     if (date.getHours() < 13){
-    reply(message, "you've been on Discord a lot today. Taking a long lunch?");
-    if ((Math.random() * 100) > 80)
-    {
-      send(message, "get some new material HueBot you unorginal hack");
-    }
+      reply(message, "you've been on Discord a lot today. Taking a long lunch?");
+      if ((Math.random() * 100) > 80)
+      {
+        send(message, "get some new material HueBot you unorginal hack");
+      }
     }
     else if (date.getHours() < 14)
-    reply(message, "I hope they aren't paying you to chat with your friends");
+      reply(message, "I hope they aren't paying you to chat with your friends");
     else if (date.getHours() < 15)
-    reply(message, "are you using discord on your phone or the computer? you've been online a lot today is all");
+      reply(message, "are you using discord on your phone or the computer? you've been online a lot today is all");
     else if (date.getHours() < 16)
-    reply(message, "how do you have time at work to type all this stuff lol");
+      reply(message, "how do you have time at work to type all this stuff lol");
     else if (date.getHours() < 17)
-    reply(message, "still at work chatting with your friends lol. just go home");
+      reply(message, "still at work chatting with your friends lol. just go home");
   }
   else {
     var response = messageAnalyzer.getPhraseforHotwords(message.content);
-    if (response != null) {
-      if (rollPercent(response.probabilityModifier + baseHotwordResponsePercent)) {
-        if (response.responseType == "send")
-          send(message, response.phrase);
-        else
-          reply(message, response.phrase);
-      }
+    if (response != null && rollPercent(response.probabilityModifier + responseProbability.hotword)) {
+      issueResponse(response, message, response.phrase);      
     }
+
     response = messageAnalyzer.getPhraseforChannel(message.channel.name);
     {
-      if (response != null) {
-        if (rollPercent(response.probabilityModifier + baseChannelResponsePercent)) {
-          if (response.responseType == "send")
-            send(message, response.phrase);
-          else
-            reply(message, response.phrase);
-        }
+      if (response != null && rollPercent(response.probabilityModifier + responseProbability.channel)) {
+        issueResponse(response, message, response.phrase);      
       }
     }
-    response = messageAnalyzer.checkForComo(message.content);
-    if (response != null &&  (messageCount < 10 )) {
 
-        if (response.responseType == "send")
-          send(message, response.phrase);
-        else
-          reply(message, response.phrase);
-      
+    response = messageAnalyzer.checkForComo(message.content);
+    if (response != null && (messageCount < 10 )) {
+      issueResponse(response, message, response.phrase);      
     }
-    if (rollPercent(baseChannelReactionPercent)) {
+
+    if (rollPercent(responseProbability.reaction)) {
       message.react(emojis[Math.floor(Math.random() * emojis.length)]);
     }
   }
@@ -175,11 +159,21 @@ function rollPercent(percent) {
   return percent >= Math.random() * 100;
 }
 
+function issueResponse(response, message, messageText) {
+  message.channel.startTyping(1);
+  setTimeout(function () {
+    message.channel.stopTyping();
+    response.responseType == "send" ? message.channel.send(messageText) : message.reply(messageText);
+  }, 3000);
+}
+
+// TODO - refactor references to use issueResponse()
 function send(message, messageText) {
   message.channel.startTyping(1);
   setTimeout(function () { message.channel.stopTyping(); message.channel.send(messageText); }, 3000);
 }
 
+// TODO - refactor references to use issueResponse()
 function reply(message, messageText) {
   message.channel.startTyping(1);
   setTimeout(function () { message.channel.stopTyping(); message.reply(messageText); }, 3000);
