@@ -172,9 +172,7 @@ client.login(config.token);
 
 //SUPPORT FUNCTIONS:
 function rollPercent(percent) {
-  if (percent * 10 >= Math.floor(Math.random() * 1000) + 1)
-    return true;
-  return false;
+  return percent >= Math.random() * 100;
 }
 
 function send(message, messageText) {
