@@ -37,6 +37,7 @@ var dbInterface = function () {
         }
         catch (ex) {
             console.error(ex);
+            throw "Exception while parsing dibstore.json";
         }
 
         var currentDate = new Date().getDate();
