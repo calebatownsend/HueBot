@@ -40,41 +40,12 @@ client.on("ready", () => {
 });
 
 client.on('messageUpdate', (oldMessage, newMessage) => {
-  if(rollPercent(30) && newMessage.embeds.length == 0 ){
-    switch(Math.floor(Math.random() * 5)){
-    case 0:
-        send(newMessage, "nice edit");
-    break;
-    case 1:
-        reply(newMessage, "lmao we all saw that");
-    break;
-    case 2:
-        send(newMessage, "u should have just left it");
-    break;
-    case 3:
-      var editIndex =
-        oldMessage.content.split('').findIndex(function (el, idx) {
-          return (el != newMessage.content[idx]);
-        });
+  if(rollPercent(responseProbability.edit) && newMessage.embeds.length == 0)
+  {
+    var messageHandler = new messageAnalyzer.messageHandler().init();
 
-      var editStart = oldMessage.content.lastIndexOf(" ", editIndex) + 1;
-      var editStop = oldMessage.content.indexOf(" ", editIndex);
-      if (editStop == -1) editStop = oldMessage.content.length;
-
-      var editWord = oldMessage.content.substring(editStart, editStop).trim();
-      if (editWord) {
-        send(newMessage, editWord + "? LMAO")
-      }
-      else {
-        reply(newMessage, "great typing my man")
-      }
-    break;
-    case 4:
-        send(newMessage, "'" + oldMessage.content + "'" + " COMO");
-        break;
-
-    }
-
+    var response = messageHandler.generateMessageUpdateResponse(oldMessage, newMessage);
+    issueResponseX(response);
   }
 });
 
@@ -156,6 +127,11 @@ function rollPercent(percent) {
   return percent >= Math.random() * 100;
 }
 
+function issueResponseX(response) {
+  response();
+}
+
+// TODO - refactor references to use issueResponseX()
 function issueResponse(response, message, messageText) {
   message.channel.startTyping(1);
   setTimeout(function () {
