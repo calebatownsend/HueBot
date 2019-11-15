@@ -14,7 +14,8 @@ var interfaces = {
 responseProbability = {
   hotword: 16,  //The percent that HueBot will respond if trigger is found.
   channel: 1,   //The percent that HueBot will respond with a general phrase; Needs to be much lower than Hotword response because this is against every message in the channel.
-  reaction: 1   //The percent that HueBot will react to a given message
+  reaction: 1,  //The percent that HueBot will react to a given message
+  edit: 30      //The percent that HueBot will respond to an edited message
 }
 
 let emojiNames = ["wheelchair","skparty","garbosnail","sksun","skfacepalm","sksleepy","poop","donny","skwondering","uhhuh","thinking","caleb","santarich","josh","swiss","jeremy","van","gray","chase","ray","toottoot","kevin","skno","skdrunk","tyler","hue"];
@@ -51,26 +52,22 @@ client.on('messageUpdate', (oldMessage, newMessage) => {
         send(newMessage, "u should have just left it");
     break;
     case 3:
-        var shorterLength = Math.min(oldMessage.content.length, newMessage.content.length);
-        var diffIndex = -1;
-        for (var i = 0; i < shorterLength; i++)
-        {
-            if (oldMessage.content[i] !== newMessage.content[i]) 
-            {
-              diffIndex = i;
-              break;
-            }
-        }
-        if (diffIndex != -1)
-        {
-          var substring = oldMessage.content.substring(diffIndex,oldMessage.content.length);
-          var spaceIndex = oldMessage.content.indexOf(' ');
-          substring = substring.substring(0,spaceIndex-1);
-          send(newMessage, substring + "? LMAO");
-        }
-        else 
-        reply(newMessage, "great typing my man");
+      var editIndex =
+        oldMessage.content.split('').findIndex(function (el, idx) {
+          return (el != newMessage.content[idx]);
+        });
 
+      var editStart = oldMessage.content.lastIndexOf(" ", editIndex) + 1;
+      var editStop = oldMessage.content.indexOf(" ", editIndex);
+      if (editStop == -1) editStop = oldMessage.content.length;
+
+      var editWord = oldMessage.content.substring(editStart, editStop).trim();
+      if (editWord) {
+        send(newMessage, editWord + "? LMAO")
+      }
+      else {
+        reply(newMessage, "great typing my man")
+      }
     break;
     case 4:
         send(newMessage, "'" + oldMessage.content + "'" + " COMO");
