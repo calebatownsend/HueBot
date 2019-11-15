@@ -66,32 +66,12 @@ client.on("message", (message) => {
   var date = new Date();
   
   var dbInterface = new interfaces.database.dbInterface().init();
-
   var messageCount = dbInterface.incrementUserMessages(message.author);
 
-  //back to work responses
-  if (messageCount == 200 && date.getHours() < 17) {
-    reply(message, "TWO HUNDRED MESSAGES TODAY. getting any work done??");
-  }
-  else if (messageCount == 100 && date.getHours() < 17) {
-    reply(message, "does your boss know you are on discord? hue");
-  }
-  else if (messageCount == 50 ) {
-    if (date.getHours() < 13){
-      reply(message, "you've been on Discord a lot today. Taking a long lunch?");
-      if ((Math.random() * 100) > 80)
-      {
-        send(message, "get some new material HueBot you unorginal hack");
-      }
-    }
-    else if (date.getHours() < 14)
-      reply(message, "I hope they aren't paying you to chat with your friends");
-    else if (date.getHours() < 15)
-      reply(message, "are you using discord on your phone or the computer? you've been online a lot today is all");
-    else if (date.getHours() < 16)
-      reply(message, "how do you have time at work to type all this stuff lol");
-    else if (date.getHours() < 17)
-      reply(message, "still at work chatting with your friends lol. just go home");
+  var messageHandler = new messageAnalyzer.messageHandler().init();
+  var backToWorkResponse = messageHandler.generateBackToWorkResponse(message, messageCount);
+  if (backToWorkResponse) {
+    issueResponseX(backToWorkResponse);
   }
   else {
     var response = messageAnalyzer.getPhraseforHotwords(message.content);

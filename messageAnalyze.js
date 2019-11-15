@@ -1,9 +1,26 @@
 const fs = require('fs');
 
 var messageHandler = function() {
+    var locals = {}
+
     var responseType = {
         SEND: 0,
         REPLY: 1
+    }
+
+    var _generateBackToWorkResponse = function(message, messageCount) {
+        switch (messageCount) {
+            case 200: return _generateReplyResponse(message, "TWO HUNDRED MESSAGES TODAY. getting any work done??");
+            case 100: return _generateReplyResponse(message, "does your boss know you are on discord? hue");
+            case 50: {
+                if (locals.timeOfDay < 13) return _generateReplyResponse(message, "you've been on Discord a lot today. Taking a long lunch?");
+                // TODO: if ((Math.random() * 100) > 80) _generateSendResponse(message, "get some new material HueBot you unorginal hack");
+                else if (locals.timeOfDay < 14) return _generateReplyResponse(message, "I hope they aren't paying you to chat with your friends");
+                else if (locals.timeOfDay < 15) return _generateReplyResponse(message, "are you using discord on your phone or the computer? you've been online a lot today is all");
+                else if (locals.timeofDay < 16) return _generateReplyResponse(message, "how do you have time at work to type all this stuff lol");
+                else if (locals.timeofDay < 17) return _generateReplyResponse(message, "still at work chatting with your friends lol. just go home");
+            }
+        }
     }
 
     var _generateMessageResponse = function(message) {
@@ -58,13 +75,16 @@ var messageHandler = function() {
             }, 3000);
         }
     }
-    
+
     var _init = function() {
+        locals.timeOfDay = new Date().getHours();
+
         return this;
     }
 
     return {
         init: _init,
+        generateBackToWorkResponse: _generateBackToWorkResponse,
         generateMessageResponse: _generateMessageResponse,
         generateMessageUpdateResponse: _generateMessageUpdateResponse
     }
