@@ -3,11 +3,12 @@ const client = new Discord.Client();
 const config = require('./config.json');
 const lfGuildID = "144653611819859969"; // "League Friends" server ID
 
-var messageAnalyzer = require('./messageAnalyze.js');
-
-var interfaces = {
-  bot: require('./botInterface.js'),
-  database: require('./dbInterface.js')
+var util = {
+  interfaces: {
+    db: {},
+    bot: {}
+  },
+  messageHandler: {}
 }
 
 //RESPONSE PERCENTAGES:
@@ -36,16 +37,19 @@ client.on("ready", () => {
     });
   }
 
+  util.interfaces.db = new require('./dbInterface.js').dbInterface().init();
+  util.interfaces.bot = new require('./botInterface.js');
+  util.messageHandler = new require('./messageAnalyze.js').messageHandler().init();
+
   console.log("I am ready to troll!");
 });
 
 client.on('messageUpdate', (oldMessage, newMessage) => {
   if(rollPercent(responseProbability.edit) && newMessage.embeds.length == 0)
   {
-    var messageHandler = new messageAnalyzer.messageHandler().init();
-
-    var response = messageHandler.generateMessageUpdateResponse(oldMessage, newMessage);
-    issueResponseX(response);
+    var response = util.messageHandler.generateMessageUpdateResponse(oldMessage, newMessage);
+    
+    issueResponse(response);
   }
 });
 
@@ -57,41 +61,37 @@ client.on("message", (message) => {
 
   if (huebotMention)
   {
-    var UserCommand = interfaces.bot.commandParser.Parse(client, message);
+    var UserCommand = util.interfaces.bot.commandParser.Parse(client, message);
     if (UserCommand) {
       UserCommand.Execute();
     }
   }
 
-  var date = new Date();
-  
-  var dbInterface = new interfaces.database.dbInterface().init();
-  var messageCount = dbInterface.incrementUserMessages(message.author);
+  var messageCount = util.interfaces.db.incrementUserMessages(message.author);
 
-  var messageHandler = new messageAnalyzer.messageHandler().init();
-  var backToWorkResponse = messageHandler.generateBackToWorkResponse(message, messageCount);
+  var backToWorkResponse = util.messageHandler.generateBackToWorkResponse(message, messageCount);
   if (backToWorkResponse) {
-    issueResponseX(backToWorkResponse);
+    issueResponse(backToWorkResponse);
   }
   else {
     if (rollPercent(responseProbability.hotword)) {
-      var hotWordResponse = messageHandler.generateHotwordResponse(message);
+      var hotWordResponse = util.messageHandler.generateHotwordResponse(message);
       if (hotWordResponse) {
-        issueResponseX(hotWordResponse);
+        issueResponse(hotWordResponse);
       }
     }
 
     if (rollPercent(responseProbability.channel)) {
-      var channelResponse = messageHandler.generateChannelResponse(message);
+      var channelResponse = util.messageHandler.generateChannelResponse(message);
       if (channelResponse) {
-        issueResponseX(channelResponse);
+        issueResponse(channelResponse);
       }
     }
 
     if (messageCount < 10 ) {
-      var comoResponse = messageHandler.generateComoResponse(message);
+      var comoResponse = util.messageHandler.generateComoResponse(message);
       if (comoResponse) {
-        issueResponseX(comoResponse);
+        issueResponse(comoResponse);
       }
     }
 
@@ -100,7 +100,7 @@ client.on("message", (message) => {
     }
   }
   
-  dbInterface.saveChanges();
+  util.interfaces.db.saveChanges();
 });
 
 //Connect to Discord
@@ -111,6 +111,6 @@ function rollPercent(percent) {
   return percent >= Math.random() * 100;
 }
 
-function issueResponseX(response) {
+function issueResponse(response) {
   response();
 }
