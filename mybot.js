@@ -74,21 +74,25 @@ client.on("message", (message) => {
     issueResponseX(backToWorkResponse);
   }
   else {
-    var response = messageAnalyzer.getPhraseforHotwords(message.content);
-    if (response != null && rollPercent(response.probabilityModifier + responseProbability.hotword)) {
-      issueResponse(response, message, response.phrase);      
-    }
-
-    response = messageAnalyzer.getPhraseforChannel(message.channel.name);
-    {
-      if (response != null && rollPercent(response.probabilityModifier + responseProbability.channel)) {
-        issueResponse(response, message, response.phrase);      
+    if (rollPercent(responseProbability.hotword)) {
+      var hotWordResponse = messageHandler.generateHotwordResponse(message);
+      if (hotWordResponse) {
+        issueResponseX(hotWordResponse);
       }
     }
 
-    response = messageAnalyzer.checkForComo(message.content);
-    if (response != null && (messageCount < 10 )) {
-      issueResponse(response, message, response.phrase);      
+    if (rollPercent(responseProbability.channel)) {
+      var channelResponse = messageHandler.generateChannelResponse(message);
+      if (channelResponse) {
+        issueResponseX(channelResponse);
+      }
+    }
+
+    if (messageCount < 10 ) {
+      var comoResponse = messageHandler.generateComoResponse(message);
+      if (comoResponse) {
+        issueResponseX(comoResponse);
+      }
     }
 
     if (rollPercent(responseProbability.reaction)) {
@@ -109,25 +113,4 @@ function rollPercent(percent) {
 
 function issueResponseX(response) {
   response();
-}
-
-// TODO - refactor references to use issueResponseX()
-function issueResponse(response, message, messageText) {
-  message.channel.startTyping(1);
-  setTimeout(function () {
-    message.channel.stopTyping();
-    response.responseType == "send" ? message.channel.send(messageText) : message.reply(messageText);
-  }, 3000);
-}
-
-// TODO - refactor references to use issueResponse()
-function send(message, messageText) {
-  message.channel.startTyping(1);
-  setTimeout(function () { message.channel.stopTyping(); message.channel.send(messageText); }, 3000);
-}
-
-// TODO - refactor references to use issueResponse()
-function reply(message, messageText) {
-  message.channel.startTyping(1);
-  setTimeout(function () { message.channel.stopTyping(); message.reply(messageText); }, 3000);
 }
