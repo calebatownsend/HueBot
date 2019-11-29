@@ -95,7 +95,7 @@ client.on("message", (message) => {
       }
     }
 
-    if (rollPercent(responseProbability.reaction)) {
+    if (emojis.length && rollPercent(responseProbability.reaction)) {
       message.react(emojis[Math.floor(Math.random() * emojis.length)]);
     }
   }
