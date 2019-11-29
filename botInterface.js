@@ -1,9 +1,9 @@
-var commandParser = (function () {
+var botInterface = function () {
     var _msg;
     var _commandName;
     var _commandArgs;
 
-    var parse = function (client, message) {
+    var _parse = function (client, message) {
         var args = message.content.split(' ').map(x => x.trim()).filter(x => x);    // filter() fxn removes falsy types ("", NaN, null, undefined, false, -AND- 0)
         
         var argBotMention = args[0];
@@ -44,15 +44,20 @@ var commandParser = (function () {
         return this;
     }
 
-    var execute = function () {
+    var _execute = function () {
         return commandList[_commandName].execute(_msg, _commandArgs);
     }
 
-    return {
-        Parse: parse,
-        Execute: execute
+    var _init = function () {
+        return this;
     }
-})();
+
+    return {
+        init: _init,
+        parse: _parse,
+        execute: _execute
+    }
+};
 
 var commandList = {
     // Add a new keyword + phrase to HueBot's repertoire
@@ -72,5 +77,5 @@ var commandList = {
 }
 
 module.exports = {
-    commandParser
+    botInterface
 }

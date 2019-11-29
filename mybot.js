@@ -38,7 +38,7 @@ client.on("ready", () => {
   }
 
   util.interfaces.db = new require('./dbInterface.js').dbInterface().init();
-  util.interfaces.bot = new require('./botInterface.js');
+  util.interfaces.bot = new require('./botInterface.js').botInterface().init();
   util.messageHandler = new require('./messageAnalyze.js').messageHandler().init();
 
   console.log("I am ready to troll!");
@@ -63,9 +63,9 @@ client.on("message", (message) => {
 
   if (huebotMention)
   {
-    var UserCommand = util.interfaces.bot.commandParser.Parse(client, message);
+    var UserCommand = util.interfaces.bot.parse(client, message);
     if (UserCommand) {
-      UserCommand.Execute();
+      UserCommand.execute();
     }
   }
 
