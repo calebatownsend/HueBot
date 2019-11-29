@@ -55,6 +55,8 @@ client.on('messageUpdate', (oldMessage, newMessage) => {
 
 //PRIMARY MESSAGE PROCESSING THREAD:
 client.on("message", (message) => {
+  if (message.author.id === client.user.id) return;
+
   var huebotMention = message.mentions.users.find(user => {
     return user.id === client.user.id;
   });
