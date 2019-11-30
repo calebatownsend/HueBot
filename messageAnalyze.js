@@ -19,8 +19,8 @@ var messageHandler = function() {
                 // TODO: if ((Math.random() * 100) > 80) _generateSendResponse(message, "get some new material HueBot you unorginal hack");
                 else if (timeOfDay < 14) return _generateReplyResponse(message, "I hope they aren't paying you to chat with your friends");
                 else if (timeOfDay < 15) return _generateReplyResponse(message, "are you using discord on your phone or the computer? you've been online a lot today is all");
-                else if (timeofDay < 16) return _generateReplyResponse(message, "how do you have time at work to type all this stuff lol");
-                else if (timeofDay < 17) return _generateReplyResponse(message, "still at work chatting with your friends lol. just go home");
+                else if (timeOfDay < 16) return _generateReplyResponse(message, "how do you have time at work to type all this stuff lol");
+                else if (timeOfDay < 17) return _generateReplyResponse(message, "still at work chatting with your friends lol. just go home");
             }
         }
     }
