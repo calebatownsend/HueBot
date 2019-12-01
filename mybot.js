@@ -19,26 +19,9 @@ responseProbability = {
   edit: 30      //The percent that HueBot will respond to an edited message
 }
 
-let emojiNames = ["wheelchair","skparty","garbosnail","sksun","skfacepalm","sksleepy","poop","donny","skwondering","uhhuh","thinking","caleb","santarich","josh","swiss","jeremy","van","gray","chase","ray","toottoot","kevin","skno","skdrunk","tyler","hue"];
-let emojis = [];
-
 client.on("ready", () => {
-  //load emoji objects
-  var leagueFriendsGuild = client.guilds.find(guild => {
-    return guild.id === lfGuildID;
-  });
-
-  if (leagueFriendsGuild)
-  {
-    emojiNames.forEach(function (name) {
-      var thisEmoji = leagueFriendsGuild.emojis.find(emoji => emoji.name === name);
-      if (thisEmoji !=  null)
-        emojis.push(thisEmoji);
-    });
-  }
-
   util.interfaces.db = new require('./dbInterface.js').dbInterface().init();
-  util.interfaces.bot = new require('./botInterface.js').botInterface().init();
+  util.interfaces.bot = new require('./botInterface.js').botInterface().init(client);
   util.messageHandler = new require('./messageAnalyze.js').messageHandler().init();
 
   console.log("I am ready to troll!");
@@ -96,9 +79,12 @@ client.on("message", (message) => {
         issueResponse(comoResponse);
       }
     }
-
-    if (emojis.length && rollPercent(responseProbability.reaction)) {
-      message.react(emojis[Math.floor(Math.random() * emojis.length)]);
+    
+    if (rollPercent(responseProbability.reaction)) {
+      var reaction = util.interfaces.bot.getReaction(message);
+      if (reaction) {
+        message.react(reaction);
+      }
     }
   }
   

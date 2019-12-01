@@ -1,7 +1,26 @@
+const Collection = require("discord.js/src/util/Collection");
+
 var botInterface = function () {
+    var locals = {
+        emojis : {
+            twemojis : ["😀","😁","😂","🤣","😃","😄","😅","😆","😉","😊","😋","😎","😍","😘","🥰","😗","😙","😚","☺️","🙂","🤗","🤩","🤔","🤨","😐","😑","😶","🙄","😏","😣","😥","😮","🤐","😯","😪","😫","😴","😌","😛","😜","😝","🤤","😒","😓","😔","😕","🙃","🤑","😲","☹️","🙁","😖","😞","😟","😤","😢","😭","😦","😧","😨","😩","🤯","😬","😰","😱","🥵","🥶","😳","🤪","😵","😡","😠","🤬","😷","🤒","🤕","🤢","🤮","🤧","😇","🤠","🤡","🥳","🥴","🥺","🤥","🤫","🤭","🧐","🤓","😈","👿","👹","👺","💀","👻","👽","🤖","💩","😺","😸","😹","😻","😼","😽","🙀","😿","😾"],   // https://getemoji.com/
+            // select, custom emojis
+            byGuild : {
+                // League Friends Guild ID
+                "144653611819859969" : ["wheelchair","skparty","garbosnail","sksun","skfacepalm","sksleepy","poop","donny","skwondering","uhhuh","thinking","caleb","santarich","josh","swiss","jeremy","van","gray","chase","ray","toottoot","kevin","skno","skdrunk","tyler","hue"]
+            }
+        }
+    }
+
     var _msg;
     var _commandName;
     var _commandArgs;
+
+    var _getReaction = function (message) {
+        var guildEmojis = (locals.emojis.byGuild[message.guild.id]);
+        var reactionSet = (guildEmojis && guildEmojis.size) ? guildEmojis : locals.emojis.twemojis;
+        return reactionSet.random();
+    }
 
     var _parse = function (client, message) {
         var args = message.content.split(' ').map(x => x.trim()).filter(x => x);    // filter() fxn removes falsy types ("", NaN, null, undefined, false, -AND- 0)
@@ -48,12 +67,29 @@ var botInterface = function () {
         return commandList[_commandName].execute(_msg, _commandArgs);
     }
 
-    var _init = function () {
+    var _init = function (client) {
+        // replaces the locals twemoji[] with a Collection<twemoji>
+        locals.emojis.twemojis
+            = new Collection(locals.emojis.twemojis.reduce(function (iterable, emoji, idx) {
+                iterable.push([idx, emoji]);
+                return iterable;
+            }, []));
+        
+        // replaces the locals byGuild emoji[] with a Collection<emoji>
+        client.guilds.forEach(guild => {
+            var selectEmojis = locals.emojis.byGuild[guild.id];
+            if (selectEmojis) {
+                var reactionSet = guild.emojis.filter(x => selectEmojis.includes(x.name));
+                locals.emojis.byGuild[guild.id] = reactionSet;
+            }
+        });
+
         return this;
     }
 
     return {
         init: _init,
+        getReaction: _getReaction,
         parse: _parse,
         execute: _execute
     }
