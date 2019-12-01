@@ -25,7 +25,7 @@ var messageHandler = function() {
         }
     }
 
-    var _generateHotwordResponse = function(message) {
+    var _generateKeywordResponse = function(message) {
         for (var key in locals.wordStore) {
             if (message.content.toLowerCase().includes(key)) {
                 let response = _getStorePhraseForKey(locals.wordStore, key);
@@ -63,7 +63,7 @@ var messageHandler = function() {
         return store[key][Math.floor(Math.random() * store[key].length)];
     }
 
-    // TODO: Fold Hotword/Channel/Como responses into singular MessageResponse function
+    // TODO: Fold Keyword/Channel/Como responses into singular MessageResponse function
     var _generateMessageResponse = function(message) {
         
     }
@@ -133,9 +133,9 @@ var messageHandler = function() {
     return {
         init: _init,
         generateBackToWorkResponse: _generateBackToWorkResponse,
-        // TODO: Fold Hotword/Channel/Como responses into singular MessageResponse function
+        // TODO: Fold Keyword/Channel/Como responses into singular MessageResponse function
         //generateMessageResponse: _generateMessageResponse,
-        generateHotwordResponse: _generateHotwordResponse,
+        generateKeywordResponse: _generateKeywordResponse,
         generateChannelResponse: _generateChannelResponse,
         generateComoResponse: _generateComoResponse,
         generateMessageUpdateResponse: _generateMessageUpdateResponse

@@ -13,8 +13,8 @@ var util = {
 
 //RESPONSE PERCENTAGES:
 responseProbability = {
-  hotword: 16,  //The percent that HueBot will respond if trigger is found.
-  channel: 1,   //The percent that HueBot will respond with a general phrase; Needs to be much lower than Hotword response because this is against every message in the channel.
+  keyword: 16,  //The percent that HueBot will respond if trigger is found.
+  channel: 1,   //The percent that HueBot will respond with a general phrase; Needs to be much lower than Keyword response because this is against every message in the channel.
   reaction: 1,  //The percent that HueBot will react to a given message
   edit: 30      //The percent that HueBot will respond to an edited message
 }
@@ -59,10 +59,10 @@ client.on("message", (message) => {
     issueResponse(backToWorkResponse);
   }
   else {
-    if (rollPercent(responseProbability.hotword)) {
-      var hotWordResponse = util.messageHandler.generateHotwordResponse(message);
-      if (hotWordResponse) {
-        issueResponse(hotWordResponse);
+    if (rollPercent(responseProbability.keyword)) {
+      var keywordResponse = util.messageHandler.generateKeywordResponse(message);
+      if (keywordResponse) {
+        issueResponse(keywordResponse);
       }
     }
 
