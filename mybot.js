@@ -18,6 +18,11 @@ responseProbability = {
   edit: 30      //The percent that HueBot will respond to an edited message
 }
 
+//Connect to Discord
+client.login(config.token)
+    //.then(message => console.log("websocket connection established."))
+      .catch(reason => console.log(`${reason}`));
+
 client.on("ready", () => {
   util.interfaces.db = new require('./dbInterface.js').dbInterface().init();
   util.interfaces.bot = new require('./botInterface.js').botInterface().init(client);
@@ -89,9 +94,6 @@ client.on("message", (message) => {
   
   util.interfaces.db.saveChanges();
 });
-
-//Connect to Discord
-client.login(config.token);
 
 //SUPPORT FUNCTIONS:
 function rollPercent(percent) {
