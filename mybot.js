@@ -2,20 +2,14 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 const config = require('./config.json');
 
+require('./utility.js');
+
 var util = {
   interfaces: {
     db: {},
     bot: {}
   },
   messageHandler: {}
-}
-
-//RESPONSE PERCENTAGES:
-responseProbability = {
-  keyword: 16,  //The percent that HueBot will respond if trigger is found.
-  channel: 1,   //The percent that HueBot will respond with a general phrase; Needs to be much lower than Keyword response because this is against every message in the channel.
-  reaction: 1,  //The percent that HueBot will react to a given message
-  edit: 30      //The percent that HueBot will respond to an edited message
 }
 
 //Connect to Discord
@@ -94,12 +88,3 @@ client.on("message", (message) => {
   
   util.interfaces.db.saveChanges();
 });
-
-//SUPPORT FUNCTIONS:
-function rollPercent(percent) {
-  return percent >= Math.random() * 100;
-}
-
-function issueResponse(response) {
-  response();
-}
