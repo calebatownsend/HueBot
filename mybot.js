@@ -1,14 +1,11 @@
+require('./utility.js');
+
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const config = require('./config.json');
 
-require('./utility.js');
-
 var util = {
-  interfaces: {
-    db: {},
-    bot: {}
-  },
+  interfaces: {},
   messageHandler: {}
 }
 
@@ -29,20 +26,18 @@ client.on('messageUpdate', (oldMessage, newMessage) => {
   if(rollPercent(responseProbability.edit) && newMessage.embeds.length == 0)
   {
     var response = util.messageHandler.generateMessageUpdateResponse(oldMessage, newMessage);
-    
-    issueResponse(response);
+    if (response) {
+      issueResponse(response);
+    }
   }
 });
 
-//PRIMARY MESSAGE PROCESSING THREAD:
 client.on("message", (message) => {
-  if (message.author.id === client.user.id) return;
+  // Prevents HueBot from replying to self
+  if (message.author.id == client.user.id) return;
 
-  var huebotMention = message.mentions.users.find(user => {
-    return user.id === client.user.id;
-  });
-
-  if (huebotMention)
+  // Message contains @HueBot mention
+  if (message.mentions.users.some(user => user.id == client.user.id))
   {
     var UserCommand = util.interfaces.bot.parse(client, message);
     if (UserCommand) {
@@ -52,37 +47,42 @@ client.on("message", (message) => {
 
   var messageCount = util.interfaces.db.incrementUserMessages(message.author);
 
+  // Back-to-work Response
   var backToWorkResponse = util.messageHandler.generateBackToWorkResponse(message, messageCount);
   if (backToWorkResponse) {
     issueResponse(backToWorkResponse);
+    return;
   }
-  else {
-    if (rollPercent(responseProbability.keyword)) {
-      var keywordResponse = util.messageHandler.generateKeywordResponse(message);
-      if (keywordResponse) {
-        issueResponse(keywordResponse);
-      }
-    }
 
-    if (rollPercent(responseProbability.channel)) {
-      var channelResponse = util.messageHandler.generateChannelResponse(message);
-      if (channelResponse) {
-        issueResponse(channelResponse);
-      }
+  // Keyword Response
+  if (rollPercent(responseProbability.keyword)) {
+    var keywordResponse = util.messageHandler.generateKeywordResponse(message);
+    if (keywordResponse) {
+      issueResponse(keywordResponse);
     }
+  }
 
-    if (messageCount < 10 ) {
-      var comoResponse = util.messageHandler.generateComoResponse(message);
-      if (comoResponse) {
-        issueResponse(comoResponse);
-      }
+  // Channel Response
+  if (rollPercent(responseProbability.channel)) {
+    var channelResponse = util.messageHandler.generateChannelResponse(message);
+    if (channelResponse) {
+      issueResponse(channelResponse);
     }
-    
-    if (rollPercent(responseProbability.reaction)) {
-      var reaction = util.interfaces.bot.getReaction(message);
-      if (reaction) {
-        message.react(reaction);
-      }
+  }
+
+  // Como Response
+  if (messageCount < 10) {
+    var comoResponse = util.messageHandler.generateComoResponse(message);
+    if (comoResponse) {
+      issueResponse(comoResponse);
+    }
+  }
+
+  // Reaction
+  if (rollPercent(responseProbability.reaction)) {
+    var reaction = util.interfaces.bot.getReaction(message);
+    if (reaction) {
+      message.react(reaction);
     }
   }
   
