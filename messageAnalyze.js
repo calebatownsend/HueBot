@@ -27,7 +27,7 @@ var messageHandler = function() {
 
     var _generateKeywordResponse = function(message) {
         for (var key in locals.wordStore) {
-            if (message.content.toLowerCase().includes(key)) {
+            if (textContainsPhraseMatch(message.content, key)) {
                 let response = _getStorePhraseForKey(locals.wordStore, key);
                 return _generateResponse(response.responseType, message, response.phrase);
             }
@@ -36,7 +36,7 @@ var messageHandler = function() {
 
     var _generateChannelResponse = function(message) {
         for (var key in locals.channelStore) {
-            if (message.channel.name.toLowerCase().includes(key)) {
+            if (textContainsPhraseMatch(message.channel.name, key)) {
                 let response = _getStorePhraseForKey(locals.channelStore, key);
                 return _generateResponse(response.responseType, message, response.phrase);
             }
@@ -44,7 +44,7 @@ var messageHandler = function() {
     }
 
     var _generateComoResponse = function(message) {
-        if (message.content.toLowerCase().includes("como")) {
+        if (textContainsPhraseMatch(message.content, "como")) {
             var wordKeys = Object.keys(locals.wordStore);
             var channelKeys = Object.keys(locals.channelStore);
 
@@ -115,6 +115,12 @@ var messageHandler = function() {
                 }
             }, 3000);
         }
+    }
+
+    function textContainsPhraseMatch(text, phrase) {
+        // https://www.regular-expressions.info/wordboundaries.html
+        var regex = new RegExp(`\\b(${phrase})\\b`, "i");
+        return regex.test(text);
     }
 
     var _init = function() {

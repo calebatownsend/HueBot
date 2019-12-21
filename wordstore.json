@@ -231,7 +231,7 @@
             "responseType": "send"
         }
     ],
-    "admin": [
+    "admin|deadmines": [
         {
             "phrase": "These admins are terrible. I'm starting my own server if ya'll would like to join.",
             "probabilityModifier": "0",
