@@ -113,7 +113,7 @@ var messageHandler = function() {
                     case responseType.REPLY: message.reply(response); break;
                     default: console.error("unexpected response type!");
                 }
-            }, 3000);
+            }, 3000 * (response.length/43.22));     // 43.22 is avg phrase length as of 12/23/19
         }
     }
 
