@@ -13,13 +13,13 @@
             "responseType": "reply"
         },
         {
-            "phrase": "I'm at 185 atm",
+            "phrase": "I'm at 165 atm",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
         },
         {
-            "phrase": "There used to be a guy who worked out at planet fitness who worked out in a wife beater, jeans, and steel toed boots and had a massive Red Bull",
+            "phrase": "who cares",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -123,7 +123,7 @@
             "responseType": "send"
         },
         {
-            "phrase": "Lmfao Why are you reinventing the wheel? I’m sure this already exists",
+            "phrase": "Would you say that to Jackson?",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -182,44 +182,14 @@
             "timesUsed": "0",
             "responseType": "send"
         }
-    ],
-    "birthday": [
+        ,
         {
-            "phrase": "I remember on my birthday I got a total of zero HBDs here.",
-            "probabilityModifier": "0",
-            "timesUsed": "0",
-            "responseType": "send"
-        },
-        {
-            "phrase": "happy birthday",
-            "probabilityModifier": "0",
-            "timesUsed": "0",
-            "responseType": "reply"
-        },
-        {
-            "phrase": "Y'all missed a birthday",
-            "probabilityModifier": "0",
-            "timesUsed": "0",
-            "responseType": "send"
-        },
-        {
-            "phrase": "4all2c",
-            "probabilityModifier": "0",
-            "timesUsed": "0",
-            "responseType": "reply"
-        },
-        {
-            "phrase": "im a birthday boy in september",
-            "probabilityModifier": "0",
-            "timesUsed": "0",
-            "responseType": "send"
-        },
-        {
-            "phrase": "i thought we had the same birthday lmao como",
+            "phrase": "Didn’t know this was the reddit channel",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
         }
+
     ],
     "gaming": [
         {
@@ -235,7 +205,7 @@
             "responseType": "reply"
         },
         {
-            "phrase": "wat",
+            "phrase": "that game could actually be fun. is it on steam?",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -259,19 +229,19 @@
             "responseType": "send"
         },
         {
-            "phrase": "back in america boys",
+            "phrase": "literally no one cares",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
         },
         {
-            "phrase": "so nobody is going to play borderlands 3? :(",
+            "phrase": "so nobody is going to play stardew anymore? :(",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
         },
         {
-            "phrase": "trigger warning ^",
+            "phrase": "Haven’t played in months br0",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -399,7 +369,7 @@
             "responseType": "send"
         },
         {
-            "phrase": "I've betrayed my conservative roots",
+            "phrase": "trigger warning ^",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -423,7 +393,7 @@
             "responseType": "send"
         },
         {
-            "phrase": "I mean Jeremy is the guy that said the tsa is the same as secret service",
+            "phrase": "very legal!!",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -517,7 +487,7 @@
             "responseType": "send"
         },
         {
-            "phrase": "im not in tech talk to discuss air frying wings",
+            "phrase": "very technical very legal",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -535,7 +505,7 @@
             "responseType": "send"
         },
         {
-            "phrase": "How is Pirate Bay back",
+            "phrase": "huebot is so 2011",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -543,7 +513,7 @@
     ],
     "developers": [
         {
-            "phrase": "It’s as if technology keeps progressing and we have to keep updating apps!",
+            "phrase": "caleb how is jackson open source if it's in a private repo?",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"

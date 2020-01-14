@@ -101,7 +101,7 @@
             "responseType": "send"
         },
         {
-            "phrase": "Anybody’s company need a qa Engineer? Looking to relo to Atlanta.",
+            "phrase": "Fry's closed RIP.",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -609,6 +609,50 @@
         },
         {
             "phrase": "please don't call me out. I am just on other discord servers that are much more cleanly organized",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "Would you say that to Jackson?",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        }
+    ],
+    "birthday": [
+        {
+            "phrase": "I remember on my birthday I got a total of zero HBDs here.",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "happy birthday",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "reply"
+        },
+        {
+            "phrase": "Y'all missed a birthday",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "4all2c",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "reply"
+        },
+        {
+            "phrase": "im a birthday boy in september",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "i thought we had the same birthday lmao como",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
