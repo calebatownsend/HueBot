@@ -70,10 +70,10 @@ var messageHandler = function() {
 
     var _generateMessageUpdateResponse = function (oldMessage, newMessage) {
         switch (Math.floor(Math.random() * 5)) {
-            case 0: return _generateSendResponse(newMessage, "nice edit");
-            case 1: return _generateSendResponse(newMessage, "u should have just left it");
+            case 0: return _generateSendResponse(newMessage, "oof u suck at typing");
+            case 1: return _generateSendResponse(newMessage, "do you look at your keyboard when you type? lmao");
             case 2: return _generateSendResponse(newMessage, "'" + oldMessage.content + "' COMO");
-            case 3: return _generateReplyResponse(newMessage, "lmao we all saw that");
+            case 3: return _generateReplyResponse(newMessage, "loool we all saw that");
             case 4: {
                 var editIndex =
                     oldMessage.content.split('').findIndex(function (el, idx) {

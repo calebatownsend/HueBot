@@ -105,7 +105,7 @@
             "responseType": "send"
         },
         {
-            "phrase": "can the admins please move opt in channels to the opt in category. Thanks!",
+            "phrase": "Where is the sourcecode for me? It's not on Caleb's github",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -147,7 +147,7 @@
             "responseType": "send"
         },
         {
-            "phrase": "Theyre called mom jeans ray",
+            "phrase": "soco flowin'",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -235,13 +235,13 @@
             "responseType": "send"
         },
         {
-            "phrase": "so nobody is going to play stardew anymore? :(",
+            "phrase": "so nobody is going to play temtem anymore? :(",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
         },
         {
-            "phrase": "Haven’t played in months br0",
+            "phrase": "All is well!!",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -333,7 +333,7 @@
             "responseType": "send"
         },
         {
-            "phrase": "I’m not educated enough to get super in the weeds on this. Sorry.",
+            "phrase": "I guess that’s political",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -345,7 +345,7 @@
             "responseType": "send"
         },
         {
-            "phrase": "My foot fell asleep reading all this on the toilet.",
+            "phrase": "Facebook is a gold mine",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -354,7 +354,7 @@
             "phrase": "did you think that article is real when you posted the link?",
             "probabilityModifier": "0",
             "timesUsed": "0",
-            "responseType": "send"
+            "responseType": "reply"
         },
         {
             "phrase": "I know you guys love the hill",
@@ -393,10 +393,10 @@
             "responseType": "send"
         },
         {
-            "phrase": "very legal!!",
+            "phrase": "Why are you quoting something you don’t believe",
             "probabilityModifier": "0",
             "timesUsed": "0",
-            "responseType": "send"
+            "responseType": "reply"
         },
         {
             "phrase": "if trump doesnt like it then its fake! whisteblower is committing treason!",
@@ -437,7 +437,7 @@
             "responseType": "send"
         },
         {
-            "phrase": "this dm tho",
+            "phrase": "Let this comment server as a reminder when the economy is no longer booming",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -457,7 +457,7 @@
     ],
     "techtalk": [
         {
-            "phrase": "whats an mp3",
+            "phrase": "How does this screenshot relate to my inability to find source code?",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -525,13 +525,13 @@
             "responseType": "send"
         },
         {
-            "phrase": "are you blaming QA For bugs you created? Its not just their fault ! ",
+            "phrase": "You couldn’t resist the challenge tho",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
         },
         {
-            "phrase": "why do i have to handhold someone to upgrade their visual studio",
+            "phrase": "I will say most people who code can fix their laptop",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"

@@ -13,13 +13,13 @@
             "responseType": "send"
         },
         {
-            "phrase": "Apparently trumps press secretary confirmed its real wtf lol",
+            "phrase": "Eye for an eye tooth for a tooth! Kill him!",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
         },
         {
-            "phrase": "at least trump isnt a king",
+            "phrase": "My parents like him. Oof.",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -31,7 +31,13 @@
             "responseType": "send"
         },
         {
-            "phrase": "I hate trump but I hate socialists more",
+            "phrase": "He should die of cancer cuz he wants private healthcare!!",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "I don’t think he deserves to be shit on because he says things that you may not agree with lol",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
