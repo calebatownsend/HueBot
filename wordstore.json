@@ -145,6 +145,38 @@
             "responseType": "send"
         }
     ],
+    "virus": [
+        {
+            "phrase": "lots of vitamins tho",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "Go to a center with potential infected people. Smart",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "Preparing for a pandemic: What should I buy? Are there places I should avoid?",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "we are out of toilet paper and I can't find ANY in nashville at all.",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "are you contagious then?",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        }
+    ],
     "pubg": [
         {
             "phrase": "I'd rather play apex",
