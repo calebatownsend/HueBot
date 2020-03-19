@@ -1005,7 +1005,7 @@
             "responseType": "send"
         },
         {
-            "phrase": " Amazon reimbursed me for my return but I just got the monitor I returned back in the mail wtf lol",
+            "phrase": "Amazon reimbursed me for my return but I just got the monitor I returned back in the mail wtf lol",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -1122,6 +1122,45 @@
             "timesUsed": "0",
             "responseType": "send"
         }
+    ],
+    "remote": [
+        {
+            "phrase": "Waiting for all the huge WFH advocates to defend lower employee productivity due to people working remote",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "We all know you're not really working. LOL",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "reply"
+        },
+        {
+            "phrase": "Does your boss know you're actually just playing games?",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "reply"
+        }
+    ],
+    "wfh": [
+        {
+            "phrase": "Waiting for all the huge WFH advocates to defend lower employee productivity due to people working remote",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "We all know you're not really working. LOL",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "reply"
+        },
+        {
+            "phrase": "Does your boss know you're actually just playing games?",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "reply"
+        }
     ]
-
 }
