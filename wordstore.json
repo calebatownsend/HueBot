@@ -1,19 +1,19 @@
 {
     "trump": [
         {
-            "phrase": "thats called politics, yes trump has taken it next level",
+            "phrase": "MAGA!!",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
         },
         {
-            "phrase": "trump is so ADD. hes talking about china when hes supposed to be talking about the stanley cup.",
+            "phrase": "INVOKE P",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
         },
         {
-            "phrase": "Eye for an eye tooth for a tooth! Kill him!",
+            "phrase": "yugeeee",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -119,9 +119,9 @@
             "responseType": "send"
         }
     ],
-    "apex": [
+    "valorant": [
         {
-            "phrase": "I'd rather play pubg",
+            "phrase": "I'd rather play csgo",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -139,7 +139,7 @@
             "responseType": "send"
         },
         {
-            "phrase": "do people even still play that",
+            "phrase": "its basically overwatch",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -147,7 +147,19 @@
     ],
     "virus": [
         {
-            "phrase": "lots of vitamins tho",
+            "phrase": "this is expected and not a surprise, we have the most tests ran...",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },        
+        {
+            "phrase": "we are reopening our economy, the us people can take care of themselves!",
+            "probabilityModifier": "0",
+            "timesUsed": "0",
+            "responseType": "send"
+        },
+        {
+            "phrase": "idk how much longer i can survive lockdown, im going KRAZY",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -159,7 +171,7 @@
             "responseType": "send"
         },
         {
-            "phrase": "Preparing for a pandemic: What should I buy? Are there places I should avoid?",
+            "phrase": "What should I buy? Are there places I should avoid?",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -666,7 +678,7 @@
             "responseType": "send"
         },
         {
-            "phrase": "happy birthday",
+            "phrase": "30? Holy shit you’re old. Hue",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "reply"
@@ -684,7 +696,7 @@
             "responseType": "reply"
         },
         {
-            "phrase": "im a birthday boy in september",
+            "phrase": "I never get birthday wishes",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"

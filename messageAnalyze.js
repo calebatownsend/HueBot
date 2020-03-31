@@ -13,14 +13,14 @@ var messageHandler = function() {
 
         switch (messageCount) {
             case 200: return _generateReplyResponse(message, "TWO HUNDRED MESSAGES TODAY. getting any work done??");
-            case 100: return _generateReplyResponse(message, "does your boss know you are on discord? hue");
+            case 100: return _generateReplyResponse(message, "I don’t use discord during working hours hue");
             case 50: {
                 if (timeOfDay < 13) return _generateReplyResponse(message, "you've been on Discord a lot today. Taking a long lunch?");
                 // TODO: if ((Math.random() * 100) > 80) _generateSendResponse(message, "get some new material HueBot you unorginal hack");
-                else if (timeOfDay < 14) return _generateReplyResponse(message, "I hope they aren't paying you to chat with your friends");
-                else if (timeOfDay < 15) return _generateReplyResponse(message, "are you using discord on your phone or the computer? you've been online a lot today is all");
-                else if (timeOfDay < 16) return _generateReplyResponse(message, "how do you have time at work to type all this stuff lol");
-                else if (timeOfDay < 17) return _generateReplyResponse(message, "still at work chatting with your friends lol. just go home");
+                else if (timeOfDay < 14) return _generateReplyResponse(message, "long lunch");
+                else if (timeOfDay < 15) return _generateReplyResponse(message, "maybe you should try getting work done instead of chatting on discord");
+                else if (timeOfDay < 16) return _generateReplyResponse(message, "i wish they paid me to be a discord chatbot");
+                else if (timeOfDay < 17) return _generateReplyResponse(message, "still at work chatting with your friends lol. just sign off");
             }
         }
     }
@@ -70,10 +70,10 @@ var messageHandler = function() {
 
     var _generateMessageUpdateResponse = function (oldMessage, newMessage) {
         switch (Math.floor(Math.random() * 5)) {
-            case 0: return _generateSendResponse(newMessage, "oof u suck at typing");
-            case 1: return _generateSendResponse(newMessage, "do you look at your keyboard when you type? lmao");
+            case 0: return _generateSendResponse(newMessage, "nice typing brololol");
+            case 1: return _generateSendResponse(newMessage, "i'd be happy to give you typing lessons");
             case 2: return _generateSendResponse(newMessage, "'" + oldMessage.content + "' COMO");
-            case 3: return _generateReplyResponse(newMessage, "loool we all saw that");
+            case 3: return _generateReplyResponse(newMessage, "sick edit");
             case 4: {
                 var editIndex =
                     oldMessage.content.split('').findIndex(function (el, idx) {
