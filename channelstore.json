@@ -1,43 +1,37 @@
 {
     "buffbros": [
         {
-            "phrase": "jazzercise is killing me",
+            "phrase": "hard to work out during quarantine",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
         },
         {
-            "phrase": "i thought you eat like crap lol",
+            "phrase": "do people still use this chat or nah",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "reply"
         },
         {
-            "phrase": "I'm at 165 atm",
+            "phrase": "I'm at 155 atm",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
         },
         {
-            "phrase": "who cares",
+            "phrase": "literally who cares",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
         },
         {
-            "phrase": "Looks like my bet is going to pay off.",
+            "phrase": "orange theory won't refund me during covid closure zzz",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
         },
         {
-            "phrase": "I challenge you to a gain contest",
-            "probabilityModifier": "0",
-            "timesUsed": "0",
-            "responseType": "reply"
-        },
-        {
-            "phrase": "CrossFit gets a bad rep of encouraging people to complete reps as fast as possible and think about form as an afterthought.",
+            "phrase": "how are ya'll keeping fit?",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "reply"
@@ -49,25 +43,13 @@
             "responseType": "reply"
         },
         {
-            "phrase": "I think any exercise like that is alright as long as you keep it in the orange zone",
-            "probabilityModifier": "0",
-            "timesUsed": "0",
-            "responseType": "send"
-        },
-        {
-            "phrase": "do you still think creatine dehydrates you even though research has proven otherwise?",
-            "probabilityModifier": "0",
-            "timesUsed": "0",
-            "responseType": "reply"
-        },
-        {
             "phrase": "I’ll take a video of you curling 40s for 10 reps with a flat back and proper form",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "reply"
         },
         {
-            "phrase": "Curl 40 btw",
+            "phrase": "Curl 50 btw",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "reply"
@@ -75,19 +57,19 @@
     ],
     "main": [
         {
-            "phrase": "y can i not generate discord invites",
+            "phrase": "El yeah",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
         },           
         {
-            "phrase": "please remind me why I am warned, and why I was kicked? Thanks!",
+            "phrase": "soco flowin",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "reply"
         },    
         {
-            "phrase": "I used to be buzzed off one drank",
+            "phrase": "why would you even say that lmao",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "reply"
@@ -117,7 +99,7 @@
             "responseType": "send"
         },
         {
-            "phrase": "Rich stood me up",
+            "phrase": "Gotta love this isn’t already just a given.",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -141,7 +123,7 @@
             "responseType": "send"
         },
         {
-            "phrase": "huebot is buggy",
+            "phrase": "this sounds like a dm",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -159,13 +141,13 @@
             "responseType": "send"
         },
         {
-            "phrase": "Friendly reminder that huebot isn’t a real person",
+            "phrase": "repost alert",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
         },
         {
-            "phrase": "Friendly reminder that HueBot is just Caleb",
+            "phrase": "lol",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -199,7 +181,7 @@
             "responseType": "send"
         },
         {
-            "phrase": "nobody asked",
+            "phrase": "sinking all my time into planet zoo these days",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "reply"
@@ -223,7 +205,7 @@
             "responseType": "send"
         },
         {
-            "phrase": "LMAO",
+            "phrase": "i would play",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -241,7 +223,7 @@
             "responseType": "send"
         },
         {
-            "phrase": "All is well!!",
+            "phrase": "Korona Kustoms?? ...  Anyone ... ???",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -249,13 +231,13 @@
     ],
     "sports": [
         {
-            "phrase": "please stay on the topic designated for this channel",
+            "phrase": "honestly missing MLB real bad. Remember when we'd go with shumard?",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
         },
         {
-            "phrase": "rip c9",
+            "phrase": "wimbledon canceled rip",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -267,19 +249,19 @@
             "responseType": "send"
         },
         {
-            "phrase": "s p o r t s b a l l",
+            "phrase": "I'm just trying to get into esports honestly",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
         },
         {
-            "phrase": "LMAO",
+            "phrase": "como",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
         },
         {
-            "phrase": "back in america boys",
+            "phrase": "so excite",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -309,7 +291,7 @@
             "responseType": "reply"
         },
         {
-            "phrase": "You know it's bad when even Fox News is taking hits on trump",
+            "phrase": "fauci facepalm",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -345,7 +327,7 @@
             "responseType": "send"
         },
         {
-            "phrase": "Facebook is a gold mine",
+            "phrase": "its just annoying when they spin literally any action to be a negative lol",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -357,7 +339,7 @@
             "responseType": "reply"
         },
         {
-            "phrase": "I know you guys love the hill",
+            "phrase": "Are you saying that even with corona we will get the same results?",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -381,13 +363,13 @@
             "responseType": "send"
         },
         {
-            "phrase": "i still hold gray responsible",
+            "phrase": "So this package for covid is being sent to the house from the senate? Isn’t that backwards?",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
         },
         {
-            "phrase": "you mean candidates try to make the opposing party look bad?",
+            "phrase": "ok thats enough kyle",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -431,7 +413,7 @@
             "responseType": "send"
         },
         {
-            "phrase": "LMAO",
+            "phrase": "time to invest",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -449,7 +431,7 @@
             "responseType": "send"
         },
         {
-            "phrase": "My credit score went down to 793 recently",
+            "phrase": "My credit score went down to 797 recently",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -505,7 +487,7 @@
             "responseType": "send"
         },
         {
-            "phrase": "huebot is so 2011",
+            "phrase": "Comcast screwing me over again",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -563,19 +545,19 @@
     ],
     "music": [
         {
-            "phrase": "please stop adding me to random channels",
+            "phrase": "le crae?",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
         },
         {
-            "phrase": "lol that music is trash",
+            "phrase": "lol can you even understand what he is saying??",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "reply"
         },
         {
-            "phrase": "i try to only listen to good music",
+            "phrase": "what a great beat",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -587,13 +569,13 @@
             "responseType": "send"
         },
         {
-            "phrase": "lool",
+            "phrase": "this barely counts as music",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
         },
         {
-            "phrase": "i didn't peg you as a heavy metal kinda guy",
+            "phrase": "i didn't peg you as a rap kinda guy",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "reply"
