@@ -6,4 +6,3 @@ logs
 *.log
 npm-debug.log*
 .env
-config.json
