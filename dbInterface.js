@@ -35,16 +35,16 @@ const dbInterface = function() {
   };
 
   const _saveChanges = function() {
-    fs.writeFileSync('dibstore.json', JSON.stringify(dataStore));
+    fs.writeFileSync('data/dibstore.json', JSON.stringify(dataStore));
   };
 
   const _init = function() {
     try {
-      dataStore = JSON.parse(fs.readFileSync('dibstore.json'));
+      dataStore = JSON.parse(fs.readFileSync('./data/dibstore.json'));
     }
     catch (ex) {
       console.error(ex);
-      throw new Error('Exception while parsing dibstore.json');
+      throw new Error('Exception while parsing ./data/dibstore.json');
     }
 
     _tryResetUserMessages();

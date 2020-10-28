@@ -110,6 +110,7 @@ client.on('messageReactionAdd', async (reaction, user) => {
       return;
     }
   }
-  queryAdminsAboutResponse(reaction.message);
+  console.log('message reaction');
+  queryAdminsAboutResponse({message: reaction.message, client});
   // console.log(`${reaction.message.author}'s message "${reaction.message.content}" gained a reaction!`);
 });

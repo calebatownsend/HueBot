@@ -152,12 +152,12 @@ const messageHandler = function() {
 
   const _init = function() {
     try {
-      locals.wordStore = JSON.parse(fs.readFileSync('wordstore.json'));
-      locals.channelStore = JSON.parse(fs.readFileSync('channelstore.json'));
+      locals.wordStore = JSON.parse(fs.readFileSync('./data/wordstore.json'));
+      locals.channelStore = JSON.parse(fs.readFileSync('./data/channelstore.json'));
     }
     catch (ex) {
       console.error(ex);
-      throw new Error('Exception while parsing wordstore.json or channelstore.json');
+      throw new Error('Exception while parsing ./data/wordstore.json or ./data/channelstore.json');
     }
 
     return this;
