@@ -1,19 +1,19 @@
 {
     "buffbros": [
         {
-            "phrase": "hard to work out during quarantine",
+            "phrase": "TIL publix carries soylent",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
         },
         {
-            "phrase": "do people still use this chat or nah",
+            "phrase": "WOAH",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "reply"
         },
         {
-            "phrase": "I'm at 155 atm",
+            "phrase": "I'm at 165 atm",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -25,7 +25,7 @@
             "responseType": "send"
         },
         {
-            "phrase": "orange theory won't refund me during covid closure zzz",
+            "phrase": "your pr is just a mental block. try upping it",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -87,7 +87,7 @@
             "responseType": "send"
         },
         {
-            "phrase": "Where is the sourcecode for me? It's not on Caleb's github",
+            "phrase": "funny",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -153,13 +153,13 @@
             "responseType": "send"
         },
         {
-            "phrase": "Friendly reminder that Caleb isn’t a real person",
+            "phrase": "clever",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
         },
         {
-            "phrase": "Soco flowin",
+            "phrase": "real original",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -181,7 +181,7 @@
             "responseType": "send"
         },
         {
-            "phrase": "sinking all my time into planet zoo these days",
+            "phrase": "sinking all my time into call of duty these days",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "reply"
@@ -217,13 +217,13 @@
             "responseType": "send"
         },
         {
-            "phrase": "so nobody is going to play temtem anymore? :(",
+            "phrase": "so nobody is going to play fifa anymore? :(",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
         },
         {
-            "phrase": "Korona Kustoms?? ...  Anyone ... ???",
+            "phrase": "yawn",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -291,7 +291,7 @@
             "responseType": "reply"
         },
         {
-            "phrase": "fauci facepalm",
+            "phrase": "its the corporation's fault!!",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -339,7 +339,7 @@
             "responseType": "reply"
         },
         {
-            "phrase": "Are you saying that even with corona we will get the same results?",
+            "phrase": "It's funny that some people still believe Biden is a good president.",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -363,7 +363,7 @@
             "responseType": "send"
         },
         {
-            "phrase": "So this package for covid is being sent to the house from the senate? Isn’t that backwards?",
+            "phrase": "The government does so much poorly yet people continue to want to give them more power",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -381,7 +381,7 @@
             "responseType": "reply"
         },
         {
-            "phrase": "if trump doesnt like it then its fake! whisteblower is committing treason!",
+            "phrase": "if trump doesnt like it then its fake!",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "reply"
@@ -495,7 +495,7 @@
     ],
     "developers": [
         {
-            "phrase": "caleb how is jackson open source if it's in a private repo?",
+            "phrase": "QA at HCA was really good",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
@@ -545,7 +545,7 @@
     ],
     "music": [
         {
-            "phrase": "le crae?",
+            "phrase": "how do you listen to this shit lmao",
             "probabilityModifier": "0",
             "timesUsed": "0",
             "responseType": "send"
